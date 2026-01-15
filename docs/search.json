@@ -10,66 +10,6 @@
     ]
   },
   {
-    "objectID": "index.html#about-this-workshop",
-    "href": "index.html#about-this-workshop",
-    "title": "FMBA AI Workshop",
-    "section": "1.1 About This Workshop",
-    "text": "1.1 About This Workshop\n\n\n\n\n\n\n\nNote\n\n\n\nStart by editing the chapters to add your content!",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome to the FMBA AI Workshop</span>"
-    ]
-  },
-  {
-    "objectID": "chapter1.html",
-    "href": "chapter1.html",
-    "title": "2  What is Vibe Coding",
-    "section": "",
-    "text": "2.1 How It Works\n“Vibe coding” is an AI-assisted software development technique introduced by Andrej Karpathy (a co-founder of OpenAI) in February 2025.\nThe term quickly gained recognition among software developers, AI practitioners, and tech media.\nReference Reading\nTraditional Coding: A human types: print(\"Hello World\").\nAI-Assisted Coding: A human types half a line, and the AI suggests the rest (auto completion).\nVibe Coding: It is a software creation approach where developers describe tasks to a large language model, rely on it to generate code, and evaluate results through execution rather than reviewing or editing the code.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>What is Vibe Coding</span>"
-    ]
-  },
-  {
-    "objectID": "index.html#building-on-modern-ai-analytics",
-    "href": "index.html#building-on-modern-ai-analytics",
-    "title": "FMBA AI Workshop",
-    "section": "0.1 Building on Modern AI & Analytics",
-    "text": "0.1 Building on Modern AI & Analytics\nThis site contains materials for Sessions 4 through 6 of the FMBA Business Analytics AI Workshop. These sessions focus on advanced applications of AI in business analytics, modern development practices, and real-world problem solving.\n\n0.1.1 What You’ll Learn\n\nAdvanced AI integration with business applications\nHands-on development with cutting-edge tools\nCollaborative workflows and best practices\nCase-based exercises and live demonstrations\n\n\n\n0.1.2 Navigation\nUse the sidebar to explore the session materials. Each chapter contains code examples, exercises, and resources for the respective sessions.\n\nThis material is prepared for the FMBA AI Workshop. Please do not cite or distribute without author’s permission.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome to Sessions 4-6: FMBA AI Workshop{.unnumbered}</span>"
-    ]
-  },
-  {
-    "objectID": "index.html#sessions-overview",
-    "href": "index.html#sessions-overview",
-    "title": "FMBA AI Workshop",
-    "section": "0.1 Sessions Overview",
-    "text": "0.1 Sessions Overview\n\n0.1.1 Session 4: Vibe Coding\nJanuary 16 Explore modern coding practices and development workflows with AI-assisted tools.\n\n\n0.1.2 Session 5: Prototyping with AI\nJanuary 23 Learn rapid prototyping techniques and AI integration strategies for business applications.\n\n\n0.1.3 Session 6: Building AI Powered Applications\nJanuary 30 Develop production-ready AI applications with best practices and real-world implementation patterns.\n\nThe material is prepared for the FMBA AI Workshop.\nPlease do not cite or distribute without author’s permission.",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome to FMBA AI Workshop{.unnumbered}</span>"
-    ]
-  },
-  {
-    "objectID": "index.html#sessions",
-    "href": "index.html#sessions",
-    "title": "FMBA AI Workshop",
-    "section": "Sessions",
-    "text": "Sessions\nThis is the site used for the following sessions of the FMBA AI Workshop.\n\nSession 4: Vibe Coding — January 16\nSession 5: Prototyping with AI — January 23\nSession 6: Building AI Powered Applications — January 30\n\nThe material is prepared for the FMBA AI Workshop.\nPlease do not cite or distribute without author’s permission.",
-    "crumbs": [
-      "Welcome"
-    ]
-  },
-  {
-    "objectID": "index.html#overview",
-    "href": "index.html#overview",
-    "title": "FMBA AI Workshop Jan 2026",
-    "section": "Overview",
-    "text": "Overview\nThe first 3 sessions have been completed. Below are the upcoming sessions:\n\nSession 4: Vibe Coding — January 16\nSession 5: Prototyping with AI — January 23\nSession 6: Building AI Powered Applications — January 30\n\nThe material is prepared for the FMBA AI Workshop.\nPlease do not cite or distribute without author’s permission.",
-    "crumbs": [
-      "Welcome"
-    ]
-  },
-  {
     "objectID": "index.html#upcoming-sessions",
     "href": "index.html#upcoming-sessions",
     "title": "FMBA AI Workshop Jan 2026",
@@ -80,181 +20,11 @@
     ]
   },
   {
-    "objectID": "chapter1.html#learning-outcomes",
-    "href": "chapter1.html#learning-outcomes",
-    "title": "1  Session 4: Vibe Coding",
-    "section": "",
-    "text": "1.1.1 Get familiar with Professional Environments\n\nUse VS Code, GitHub Codespaces, and cloud runtimes\n\n\n\n1.1.2 Basic Operating System & Terminal Literacy\n\nNavigate files and folders (Linux basics)\nUse terminal commands to start, stop, and rerun applications\n\n\n\n1.1.3 Understand Core Code Artifacts\n\nWhat is a python script file?\nKnow the difference between .py files and Jupyter notebooks\n\n\n\n1.1.4 Clear Product Thinking\n\nHave a concrete idea or prototype in mind before prompting\nBreak ideas into steps the AI can execute",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Session 4: Vibe Coding</span>"
-    ]
-  },
-  {
-    "objectID": "chapter1.html#minimal-technical-skills-required-for-effective-vibe-coding",
-    "href": "chapter1.html#minimal-technical-skills-required-for-effective-vibe-coding",
-    "title": "1  Session 4: Vibe Coding",
-    "section": "",
-    "text": "1.1.1 Get familiar with Professional Environments\n\nUse VS Code, GitHub Codespaces, and cloud runtimes\n\n\n\n1.1.2 Basic Operating System & Terminal Literacy\n\nNavigate files and folders (Linux basics)\nUse terminal commands to start, stop, and rerun applications\n\n\n\n1.1.3 Understand Core Code Artifacts\n\nWhat is a python script file?\nKnow the difference between .py files and Jupyter notebooks\n\n\n\n1.1.4 Clear Product Thinking\n\nHave a concrete idea or prototype in mind before prompting\nBreak ideas into steps the AI can execute",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Session 4: Vibe Coding</span>"
-    ]
-  },
-  {
-    "objectID": "chapter1.html#minimal-technical-skills-required",
-    "href": "chapter1.html#minimal-technical-skills-required",
-    "title": "1  Session 4: Vibe Coding",
-    "section": "2.1 Minimal Technical Skills Required",
-    "text": "2.1 Minimal Technical Skills Required\n\n2.1.1 Get familiar with Professional Environments\n\nUse VS Code, GitHub Codespaces, and cloud runtimes\n\n\n\n2.1.2 Basic Operating System & Terminal Literacy\n\nNavigate files and folders (Linux basics)\nUse terminal commands to start, stop, and rerun applications\n\n\n\n2.1.3 Understand Core Code Artifacts\n\nWhat is a python script file?\nKnow the difference between .py files and Jupyter notebooks\n\n\n\n2.1.4 Clear Product Thinking\n\nHave a concrete idea or prototype in mind before prompting\nBreak ideas into steps the AI can execute",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Session 4: Vibe Coding</span>"
-    ]
-  },
-  {
-    "objectID": "chapter1.html#get-familiar-with-professional-environments",
-    "href": "chapter1.html#get-familiar-with-professional-environments",
-    "title": "1  Vibe Coding",
-    "section": "2.1 Get familiar with Professional Environments",
-    "text": "2.1 Get familiar with Professional Environments\n\nUse VS Code, GitHub Codespaces, and cloud runtimes",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>What is Vibe Coding</span>"
-    ]
-  },
-  {
-    "objectID": "chapter1.html#basic-operating-system-terminal-literacy",
-    "href": "chapter1.html#basic-operating-system-terminal-literacy",
-    "title": "1  Vibe Coding",
-    "section": "2.2 Basic Operating System & Terminal Literacy",
-    "text": "2.2 Basic Operating System & Terminal Literacy\n\nNavigate files and folders (Linux basics)\nUse terminal commands to start, stop, and rerun applications",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>What is Vibe Coding</span>"
-    ]
-  },
-  {
-    "objectID": "chapter1.html#understand-core-code-artifacts",
-    "href": "chapter1.html#understand-core-code-artifacts",
-    "title": "1  Vibe Coding",
-    "section": "2.3 Understand Core Code Artifacts",
-    "text": "2.3 Understand Core Code Artifacts\n\nWhat is a python script file?\nKnow the difference between .py files and Jupyter notebooks",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>What is Vibe Coding</span>"
-    ]
-  },
-  {
-    "objectID": "chapter1.html#clear-product-thinking",
-    "href": "chapter1.html#clear-product-thinking",
-    "title": "1  Vibe Coding",
-    "section": "2.4 Clear Product Thinking",
-    "text": "2.4 Clear Product Thinking\n\nHave a concrete idea or prototype in mind before prompting\nBreak ideas into steps the AI can execute",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>What is Vibe Coding</span>"
-    ]
-  },
-  {
-    "objectID": "chapter2.html",
-    "href": "chapter2.html",
-    "title": "3  Labs: Minimal Technical Skills Required",
-    "section": "",
-    "text": "3.1 Lab: GitHub Codespaces",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Labs: Minimal Technical Skills Required</span>"
-    ]
-  },
-  {
-    "objectID": "chapter2.html#lab-1-get-familiar-with-professional-environments",
-    "href": "chapter2.html#lab-1-get-familiar-with-professional-environments",
-    "title": "3  Labs: Minimal Technical Skills Required",
-    "section": "",
-    "text": "Objectives\n\nUse VS Code, GitHub Codespaces, and cloud runtimes.\nUnderstanding Terminal, basics.\n\n\n\nLab Task\n\n\n\n\n\n\nTipGet Started with GitHub Codespaces\n\n\n\nFollow the steps in the document below to learn GitHub Codespaces basics and get comfortable with the development environment.\n\nStep-by-step lab: Get Started With GitHub Codespaces\n\n\n\n\n\nCheck Your Understanding\nAfter completing the lab, answer these questions:\n\nWhat is a GitHub Codespace and how does it differ from working on your local machine?\nHow do you access the terminal in a Codespace?\nWhere can you find the GitHub Copilot (coding assistant) in Codespaces?",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Labs: Minimal Technical Skills Required</span>"
-    ]
-  },
-  {
-    "objectID": "chapter2.html#lab-2-basic-operating-system-terminal-literacy",
-    "href": "chapter2.html#lab-2-basic-operating-system-terminal-literacy",
-    "title": "3  Labs: Minimal Technical Skills Required",
-    "section": "Lab 2: Basic Operating System & Terminal Literacy",
-    "text": "Lab 2: Basic Operating System & Terminal Literacy\n\nNavigate files and folders (Linux basics)\nUse terminal commands to start, stop, and rerun applications\n\n\n3.1.3 The Missing Piece\n\nMany students begin their programming journey by writing Python directly in notebook platforms — no setup, no files, no terminals. These Jupyter notebook environments make coding easy; however, this convenience often means skipping an important part of programming: working with real Python files (.py) and using the terminal to run and manage code.\nThis “missing piece” is essential for understanding how programming works in real projects, servers, and production systems.\n\n\n\n\n\n\nWarning⚠️ Importance of Command Line and Terminal\n\n\n\nIf you skip learning command line skills or avoid the terminal, you’ll struggle to work on real-world projects, collaborate effectively with teams, or operate in servers or cloud platforms — where graphical interfaces aren’t available. The terminal isn’t just a tool for experts; it’s the foundation for professional workflows in data science and engineering.\n\n\nSo, before diving deeper into advanced business data workflows, we’ll start by filling this gap, and learn the command lines and terminal to navigate files, run Python scripts, and operate in professional computing environments.\nWhat You’ll Learn Next\n\nMain operating systems: Windows, macOS, Linux/Unix\nGUI vs terminal and why terminals matter\nBash shell basics for programming and data science\n\n\n\n3.1.4 Operating Systems Overview\nMost students in this course use Windows, which dominates personal computers with roughly 70–75% of the global desktop market. macOS holds about 15–20%, while Linux and others make up a small share of personal use.\nIn contrast, the enterprise, cloud, AI/ML, and high-performance computing (HPC) worlds are very different. Linux and other Unix-like systems are the backbone in web servers, cloud computing and supercomputers, making up nearly half of cloud workloads and being the OS for all top 500 supercomputers. Popular Unix and Linux systems include:\n\nUbuntu\nDebian\nFedora\nRed Hat Enterprise Linux (RHEL)\n\n\n\n\n\n\n\nNotemacOS is Unix-based\n\n\n\nAlthough macOS looks different, it is actually Unix-based, meaning the terminal commands and Bash shell you’ll learn in this course work much the same on both macOS and Linux.\n\n\n\nServers Linux holds a 62.7% market share for server operating systems.\n\nWeb servers: 77–88% of public web servers run on Linux or other Unix-like systems. It is the most used operating system for web servers globally.\n\nCloud computing Cloud workloads are heavily dependent on Linux-based operating systems. As of mid-2025, Linux powers 49.2% of all global cloud workloads.\nSupercomputers Linux has a complete monopoly in the supercomputing sector. 100% market share: Since 2017, 100% of the world’s top 500 supercomputers have run on Linux.\nAI and ML workloads Linux is the clear leader for AI and ML projects and infrastructure. In mid-2025, 87.8% of machine learning workloads ran on Linux infrastructure. Large ML and data science deployments predominantly run on Linux-based or Unix-based servers.\n\nCloud environments: Cloud providers like AWS, Google Cloud (GCP), and Microsoft Azure primarily offer Linux-based instances for running AI and ML tasks.\n\n\nSource: Wikipedia - Usage share of operating systems Azure Official Page, Microsoft Tech Community Update (Feb 2025)\n\n\n3.1.5 What Operating System does GitHub Codespaces use?\nOpen the Terminal inside your GitHub Codespace (View → Terminal) and check the OS with the commands below.\n# Bash\n# Display info about the operating system\ncat /etc/*-release\n\n# Display the Linux kernel version and build info\ncat /proc/version\nYou should see an Ubuntu-based Linux release because GitHub Codespaces runs inside a Linux container.\n\n\n3.1.6 What Is a Terminal?\n\nA terminal (also called a command line or shell) is a text-based interface that lets you interact directly with your computer by typing commands.\nBefore graphical interfaces (with windows, icons, and a mouse) were invented, the terminal was the primary way users operated computers — to run programs, manage files, and control hardware.\nEVERY operating system includes a terminal app:\n\nWindows:\n\nCommand Prompt(cmd)\nPowerShell\nor Bash (through Windows Subsystem for Linux)\nLinux: Bash is the default shell on most Linux systems\n\nmacOS: Zsh in Terminal app (based on Unix) is the default terminal in macOS.\n\n\n\n\n\n\n\nNoteBash vs Zsh\n\n\n\n\nBoth Bash and Zsh are terminals that interpret your commands, and they work almost the same.\n\n\n\n\nThe terminal can do almost everything you normally do with a mouse:\n\nNavigate files and folders\n\nRun programs or scripts\n\nInstall and manage software\n\nConnect to remote servers\n\nAutomate repetitive tasks with shell scripts\n\nData scientists and developers rely on the terminal for its speed and automation, especially when working in cloud environments like GitHub Codespaces or on Linux servers.\n\n\n3.1.7 Why Learn Bash commands and Terminal?\nFirst, data science projects often run on servers or cloud environments, not personal laptops which lack the computational power for large-scale training, data processing, or deployment.\nThese servers — such as AWS EC2, Azure VMs, or Google Cloud Compute instances — usually run Linux or Unix systems and don’t include a graphical user interface (GUI) by default. — they are managed entirely through the command line interface (CLI). To interact with them efficiently, you use Bash, a powerful and widely used command-line shell.\n\n\n\n\n\n\nTipWhat is a GUI?\n\n\n\nA Graphical User Interface (UI) is the visual part of your computer — windows, buttons, and menus you click with the mouse. However, Linux servers don’t usually have this kind of visual interface.\nInstead, users interact with them through script commands typed into a terminal such as bash.\n\n\n\n\n3.1.8 GUI, CLI, Terminal and Desktop\n\n\nGUI (Graphical User Interface) – The visual interface you use with a mouse, icons, and windows, such as Windows desktop, macOS Finder. GUIs are user-friendly but less efficient for automation or remote access.\nCLI (Command Line Interface) – A text-based interface where you type commands instead of clicking.\nTerminal – The program that provides access to the CLI. It’s like a window that lets you type commands and see text output, such as Windows PowerShell, macOS Terminal, Linux bash Terminal.\nDesktop Environment – The collection of GUI components that make up the user’s graphical workspace — including the taskbar, file explorer, and app windows; such as Windows Desktop, macOS.\n\n\n\n\n\n\n\nNoteSummary\n\n\n\n\nThe Terminal gives you access to the CLI, while the Desktop Environment provides a GUI.\n\nBoth let you control the same computer — one through text, the other through graphics.\n\n\n\n\n\n3.1.9 Learning Bash commands in GitHub Codespaces\nMastering Bash is essential. It enables you to write scripts, manage jobs, and execute commands directly on compute servers — a critical skill when working with large datasets or LLM pipelines.\nWe are going to learn basic bash commands to:\n\nNavigate and manage files\nRun Python (.py) scripts and other programs (e.g., pip) directly from the command line\nWork efficiently within server-based or local terminal environments\n\nUse your GitHub Codespace terminal in VS Code to practice these commands. If you close the terminal, reopen it via View → Terminal or the Ctrl+` shortcut.\n\n\n3.1.10 Lab: Linux and bash\n\nDisplay info about the operating system.\n\ncat /etc/*-release\n\nDisplay the Linux kernel version and build info.\n\ncat /proc/version\n\n\n3.1.11 Lab: Paths, Folders, Directories (pwd)\n\nPrint your current working directory (the folder you are “in”). A directory is a folder, directory and folder are the same thing.\n\npwd\n#/workspaces/fmbaaiworkshop26spring\nPlease type pwd 5 times and each time say “print working directory”.\nWhen to use pwd? if you lost in folders and don’t know where you are in the directories or folders, pwd will tell you where you are.\n/workspaces/fmbaaiworkshop26spring$ pwd\n#/workspaces/fmbaaiworkshop26spring\n\n\n3.1.12 Lab: List Directory (ls)\nThe ls command is used to list files and folders in a directory.\nHere are some of the most commonly used ones with options (such as -a, -l)\n# List files and folders in the current directory\nls\n\n# List **all** files, including hidden ones (those starting with .)\nls -a\n\n# List files in a detailed (**long**) format — shows permissions, owner, size, and date\nls -l\n\n# Combine options: show all files in detailed view\nls -la\n\n# Sort files by modification **time** (newest first)\nls -lt\n\n\n3.1.13 Lab: Change Directory (cd)\n\ncd data: go the data folder under the current directory (create it first if it doesn’t exist).\ncd ..: go the parent folder.\ncd ~: go to the home folder. In Codespaces, the home folder is /home/codespace. If you are lost in a directory and want to start over from a safe directory – your home. You can type cd ~, and you will be taken to the home directory.\n\n# go into a practice folder under your repo root\nls\nmkdir practice\ncd practice\nls\n\n\n# Move up one folder (to the parent directory /workspaces/fmbaaiworkshop26spring)\ncd ..\n\n# Go back to your \"home\" folder (/home/codespace in Codespaces)\ncd ~\npwd\n\n# To-do: find a way to go back to the /workspaces/fmbaaiworkshop26spring folder. \n\n\n\n3.1.14 Lab: Make A Directory (mkdir)\n# From your repo root, create a new folder named \"data\"\ncd /workspaces/fmbaaiworkshop26spring\nmkdir data\n\n# Make multiple folders at once\nmkdir project results logs\n\n# Check that they were created\nls\n\n\n3.1.15 Lab: curl\nGo to the \"data\" directory, and download a file from the internet. in curl -O &lt;URL&gt;, -O stands for saving file with the same name as on the web server.\n# Go to the \"data\" Directory\n\ncd /workspaces/fmbaaiworkshop26spring/data\n\n# Download a small sample text file and save it with the same name. \ncurl -O https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv\n\n# List files to confirm it’s there\nls\n\n\n3.1.16 Lab: Clear the Screen (clear)\n# Clear the terminal screen\nclear\n\n\n3.1.17 Lab: Remove Directory (rmdir)\n# Create an empty folder named \"temp_folder\"\nmkdir temp_folder\n\n# Remove the empty folder\nrmdir temp_folder\n\n# Create multiple empty folders and remove them\nmkdir folder1 folder2\nrmdir folder1 folder2\n\n\n3.1.18 Lab: Making Empty Files (touch)\n# Create an empty file named \"notes.txt\"\ntouch notes.txt\n\n# Create multiple files at once\ntouch a.txt b.txt c.txt\n\n# Verify files were created\nls\n\n\n3.1.19 Lab: Copy a File (cp)\n# Copy a file to a new file\ncp notes.txt notes_backup.txt\n\n# Create a folder to copy into\nmkdir backup\n\n# Copy a file into a different folder\ncp notes.txt backup/\n\n# Check the results\nls backup\n\n\n3.1.20 Lab: Moving/Rename a File (mv)\n# Move a file into a different folder\nmv notes_backup.txt backup/\n\n# Rename a file\nmv notes.txt todo.txt\n\n# Verify the changes\nls\n\n\n3.1.21 Lab: Stream a File (cat)\n# Display the contents of a file\ncat todo.txt\n\n# To-do: Display the README.md file in your repository:\n\n\n# Display a system file (try this!)\ncat /etc/*-release\n\n\n3.1.22 Lab: Removing a File (rm)\n# Create some temporary files first\ntouch old.txt temp.txt sample.txt\n\n# Remove a single file\nrm old.txt\n\n# Remove multiple files\nrm temp.txt sample.txt\n\n# Remove an entire folder and its contents (be careful!)\nrm -r backup\n\n\n3.1.23 Lab: Exiting Your Terminal (exit)\n# Exit the current terminal session\nexit",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Labs: Minimal Technical Skills Required</span>"
-    ]
-  },
-  {
-    "objectID": "chapter2.html#understand-core-code-artifacts",
-    "href": "chapter2.html#understand-core-code-artifacts",
-    "title": "3  Labs: Minimal Technical Skills Required",
-    "section": "3.1 Understand Core Code Artifacts",
-    "text": "3.1 Understand Core Code Artifacts\n\nWhat is a python script file?\nKnow the difference between .py files and Jupyter notebooks",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Labs: Minimal Technical Skills Required</span>"
-    ]
-  },
-  {
-    "objectID": "chapter2.html#clear-product-thinking",
-    "href": "chapter2.html#clear-product-thinking",
-    "title": "3  Labs: Minimal Technical Skills Required",
-    "section": "3.1 Clear Product Thinking",
-    "text": "3.1 Clear Product Thinking\n\nHave a concrete idea or prototype in mind before prompting\nBreak ideas into steps the AI can execute",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Labs: Minimal Technical Skills Required</span>"
-    ]
-  },
-  {
-    "objectID": "chapter1.html#vibe-coding-an-example",
-    "href": "chapter1.html#vibe-coding-an-example",
-    "title": "2  What is Vibe Coding",
-    "section": "2.2 Vibe Coding: An Example",
-    "text": "2.2 Vibe Coding: An Example\n\nA human says, “I want an web app that tracks our Q3 sales goals and sends a Slack alert if we drop below 80%.”\nThe AI then autonomously writes the code, sets up the server, connects the database, and fixes its own bugs.\nThe human only need to know how to run the code to test whether it is working as expected.\nIf not, the human keeps asking for revisions in natural language instead of inspecting or modifying the code itself.",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>What is Vibe Coding</span>"
-    ]
-  },
-  {
-    "objectID": "chapter1.html#minimal-technical-skills-required-for-vibe-coding",
-    "href": "chapter1.html#minimal-technical-skills-required-for-vibe-coding",
-    "title": "2  What is Vibe Coding",
-    "section": "2.4 Minimal Technical Skills Required for Vibe Coding",
-    "text": "2.4 Minimal Technical Skills Required for Vibe Coding\n\nRun code in professional environments\n\nUse VS Code, GitHub Codespaces, and cloud runtimes\nUnderstand how to start, stop, and rerun applications\n\nBasic operating system & terminal literacy\n\nNavigate files and folders (Linux basics)\nUse terminal commands\n\nUnderstand core code artifacts\n\nWhat is a python script file?\nKnow the difference between .py files and Jupyter notebooks\n\nClear product thinking\n\nHave a concrete idea or prototype in mind before prompting\nBreak ideas into steps the AI can execute\n\nVersion control with Git (your regret medicine)\n\nSave working versions; roll back when the AI makes mistakes",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>What is Vibe Coding</span>"
-    ]
-  },
-  {
-    "objectID": "chapter1.html#is-coding-skills-required",
-    "href": "chapter1.html#is-coding-skills-required",
-    "title": "2  What is Vibe Coding",
-    "section": "2.3 Is Coding Skills Required?",
-    "text": "2.3 Is Coding Skills Required?\n\n\n\n\n\n\nImportantCoding Skills Is Still Required\n\n\n\nVibe coding lowers the barrier, but it does not remove the need for technical literacy.\nVibe coding reduces how much code you write, not how much responsibility you have.\n\n\nWhy This Matters:\n\nYou must run and test the code — real apps don’t run inside chat; they run in terminals, servers, or browsers\nYou need to validate outcomes — knowing what “working” looks like requires understanding logs, errors, and outputs\nAI-generated code can fail silently — without basic coding knowledge, you won’t know whether results are correct or misleading\nDebugging still happens — even if AI writes the code, humans must recognize when something breaks and why\nSecurity and data risks remain — you need enough literacy to spot unsafe behaviors (e.g., exposed keys, wrong data access)",
-    "crumbs": [
-      "<span class='chapter-number'>2</span>  <span class='chapter-title'>What is Vibe Coding</span>"
-    ]
-  },
-  {
     "objectID": "chapter0.html",
     "href": "chapter0.html",
     "title": "1  AI Tools for Coding",
     "section": "",
     "text": "1.1 AI Tools for Text, Voice and Image Generation\nAI tools for text, voice, and image generation have become widespread.\nWe covered many of them in the first 3 AI workshops.\nText Generation: - ChatGPT - Claude - Microsoft Copilot - Google Gemini\nImage Generation: - DALL-E - Midjourney\nVoice & Synthesis: - NotebookLM – synthesizes and transforms information into podcasts and voice summaries",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>AI Tools for Coding</span>"
-    ]
-  },
-  {
-    "objectID": "chapter0.html#coding-specific-ai-tools-ai-pair-programmer-integrated-into-ides-e.g.-vs-code-for-real-time-code-suggestions-and-completion",
-    "href": "chapter0.html#coding-specific-ai-tools-ai-pair-programmer-integrated-into-ides-e.g.-vs-code-for-real-time-code-suggestions-and-completion",
-    "title": "1  AI Tools for Coding",
-    "section": "",
-    "text": "Claude Code – Coding-focused AI that analyzes and edits code across entire projects\nGemini Code / Gemini CLI – Google’s AI coding agent designed to work directly in the terminal\nOpenAI Codex – AI engine that writes, runs, and tests code in controlled development environments\nCursor – AI-powered code editor optimized for UI and end-to-end code generation workflows",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>AI Tools for Coding</span>"
-    ]
-  },
-  {
-    "objectID": "chapter0.html#coding-specific-ai-tools",
-    "href": "chapter0.html#coding-specific-ai-tools",
-    "title": "1  AI Tools for Coding",
-    "section": "1.2 Coding-Specific AI Tools",
-    "text": "1.2 Coding-Specific AI Tools\nHowever, the world of coding requires a specialized set of tools designed specifically to understand, generate, and debug code for developers, programmers, engineers, etc.\n\nGitHub Copilot – AI pair programmer integrated into IDEs (e.g., VS Code) for real-time code suggestions and completion\nClaude Code – Coding-focused AI that analyzes and edits code across entire projects\nGemini Code / Gemini CLI – Google’s AI coding agent designed to work directly in the terminal\nOpenAI Codex – AI engine that writes, runs, and tests code in controlled development environments\nCursor – AI-powered code editor optimized for UI and end-to-end code generation workflows",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>AI Tools for Coding</span>"
     ]
@@ -270,131 +40,51 @@
     ]
   },
   {
-    "objectID": "chapter2.html#lab-1-github-codespaces",
-    "href": "chapter2.html#lab-1-github-codespaces",
+    "objectID": "chapter1.html",
+    "href": "chapter1.html",
+    "title": "2  What is Vibe Coding",
+    "section": "",
+    "text": "2.1 How It Works\n“Vibe coding” is an AI-assisted software development technique introduced by Andrej Karpathy (a co-founder of OpenAI) in February 2025.\nThe term quickly gained recognition among software developers, AI practitioners, and tech media.\nReference Reading\nTraditional Coding: A human types: print(\"Hello World\").\nAI-Assisted Coding: A human types half a line, and the AI suggests the rest (auto completion).\nVibe Coding: It is a software creation approach where developers describe tasks to a large language model, rely on it to generate code, and evaluate results through execution rather than reviewing or editing the code.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>What is Vibe Coding</span>"
+    ]
+  },
+  {
+    "objectID": "chapter1.html#vibe-coding-an-example",
+    "href": "chapter1.html#vibe-coding-an-example",
+    "title": "2  What is Vibe Coding",
+    "section": "2.2 Vibe Coding: An Example",
+    "text": "2.2 Vibe Coding: An Example\n\nA human says, “I want an web app that tracks our Q3 sales goals and sends a Slack alert if we drop below 80%.”\nThe AI then autonomously writes the code, sets up the server, connects the database, and fixes its own bugs.\nThe human only need to know how to run the code to test whether it is working as expected.\nIf not, the human keeps asking for revisions in natural language instead of inspecting or modifying the code itself.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>What is Vibe Coding</span>"
+    ]
+  },
+  {
+    "objectID": "chapter1.html#is-coding-skills-required",
+    "href": "chapter1.html#is-coding-skills-required",
+    "title": "2  What is Vibe Coding",
+    "section": "2.3 Is Coding Skills Required?",
+    "text": "2.3 Is Coding Skills Required?\n\n\n\n\n\n\nImportantCoding Skills Is Still Required\n\n\n\nVibe coding lowers the barrier, but it does not remove the need for technical literacy.\nVibe coding reduces how much code you write, not how much responsibility you have.\n\n\nWhy This Matters:\n\nYou must run and test the code — real apps don’t run inside chat; they run in terminals, servers, or browsers\nYou need to validate outcomes — knowing what “working” looks like requires understanding logs, errors, and outputs\nAI-generated code can fail silently — without basic coding knowledge, you won’t know whether results are correct or misleading\nDebugging still happens — even if AI writes the code, humans must recognize when something breaks and why\nSecurity and data risks remain — you need enough literacy to spot unsafe behaviors (e.g., exposed keys, wrong data access)",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>What is Vibe Coding</span>"
+    ]
+  },
+  {
+    "objectID": "chapter1.html#minimal-technical-skills-required-for-vibe-coding",
+    "href": "chapter1.html#minimal-technical-skills-required-for-vibe-coding",
+    "title": "2  What is Vibe Coding",
+    "section": "2.4 Minimal Technical Skills Required for Vibe Coding",
+    "text": "2.4 Minimal Technical Skills Required for Vibe Coding\n\nRun code in professional environments\n\nUse VS Code, GitHub Codespaces, and cloud runtimes\nUnderstand how to start, stop, and rerun applications\n\nBasic operating system & terminal literacy\n\nNavigate files and folders (Linux basics)\nUse terminal commands\n\nUnderstand core code artifacts\n\nWhat is a python script file?\nKnow the difference between .py files and Jupyter notebooks\n\nClear product thinking\n\nHave a concrete idea or prototype in mind before prompting\nBreak ideas into steps the AI can execute\n\nVersion control with Git (your regret medicine)\n\nSave working versions; roll back when the AI makes mistakes",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>What is Vibe Coding</span>"
+    ]
+  },
+  {
+    "objectID": "chapter2.html",
+    "href": "chapter2.html",
     "title": "3  Labs: Minimal Technical Skills Required",
     "section": "",
-    "text": "3.1.1 Objective\n\nUse GitHub Codespaces, VS Code, and cloud runtimes.\nUnderstanding Terminal, Command Line Interface (CLI), and user interface.\n\n\n\n3.1.2 Task\n\n\n\n\n\n\nTipTask: Get Started with GitHub Codespaces\n\n\n\nFollow the steps in the document below to learn GitHub Codespaces basics and get comfortable with the professional development environment.\n\nStep-by-step lab: Get Started With GitHub Codespaces\n\n\n\nAfter completing the lab, answer these questions:\n\nWhat is a GitHub Codespace and how does it differ from working on your local machine?\nHow do you access the terminal in a Codespace?\nWhere can you find the GitHub Copilot (coding assistant) in Codespaces?",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Labs: Minimal Technical Skills Required</span>"
-    ]
-  },
-  {
-    "objectID": "chapter2.html#lab-2-understand-core-code-artifacts",
-    "href": "chapter2.html#lab-2-understand-core-code-artifacts",
-    "title": "3  Labs: Minimal Technical Skills Required",
-    "section": "Lab 2: Understand Core Code Artifacts",
-    "text": "Lab 2: Understand Core Code Artifacts\n\nWhat is a python script file?\nKnow the difference between .py files and Jupyter notebooks",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Labs: Minimal Technical Skills Required</span>"
-    ]
-  },
-  {
-    "objectID": "chapter2.html#lab-3-basic-operating-system-terminal-literacy",
-    "href": "chapter2.html#lab-3-basic-operating-system-terminal-literacy",
-    "title": "3  Labs: Minimal Technical Skills Required",
-    "section": "Lab 3: Basic Operating System & Terminal Literacy",
-    "text": "Lab 3: Basic Operating System & Terminal Literacy\n\nNavigate files and folders (Linux basics)\nUse terminal commands to start, stop, and rerun applications",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Labs: Minimal Technical Skills Required</span>"
-    ]
-  },
-  {
-    "objectID": "chapter2.html#lab-2-python-script-files-basics",
-    "href": "chapter2.html#lab-2-python-script-files-basics",
-    "title": "3  Labs: Minimal Technical Skills Required",
-    "section": "Lab 2: Python Script Files Basics",
-    "text": "Lab 2: Python Script Files Basics\n\nWhat is a python script file?\nKnow the difference between .py files and Jupyter notebooks",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Labs: Minimal Technical Skills Required</span>"
-    ]
-  },
-  {
-    "objectID": "chapter2.html#lab-3-python-script-files-basics",
-    "href": "chapter2.html#lab-3-python-script-files-basics",
-    "title": "3  Labs: Minimal Technical Skills Required",
-    "section": "Lab 3: Python Script Files Basics",
-    "text": "Lab 3: Python Script Files Basics\n\nWhat is a python script file?\nKnow the difference between .py files and Jupyter notebooks .ipynb.",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Labs: Minimal Technical Skills Required</span>"
-    ]
-  },
-  {
-    "objectID": "chapter3.html",
-    "href": "chapter3.html",
-    "title": "4  Prototyping an app with streamlit",
-    "section": "",
-    "text": "4.1 Context and Goal\nYou are going to prototype an interactive financial dashboard app using Vibe Coding.\nData scientists often start in Jupyter Notebooks for exploration and analysis. However, real-world applications require deployable, interactive dashboards for sharing insights with others.\nYou are provided with the some preliminary analyses of financial data in Jupyter notebook. You are tasked to refactor it and create an Streamlit web application to present the data in an interactive way.",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Prototyping an app with `streamlit`</span>"
-    ]
-  },
-  {
-    "objectID": "chapter3.html#context-and-goal",
-    "href": "chapter3.html#context-and-goal",
-    "title": "4  Prototyping an app with streamlit",
-    "section": "",
-    "text": "ImportantGoal\n\n\n\nTransition from a prototype .ipynb file to a production-ready .py file that builds an interactive Streamlit dashboard.\n\n\n\n\n\nDownload the following files from the downloads folder in the https://github.com/tianyuan09/fmbaaiworkshop26spring.\n\nCompute Financial Ratios Notebook.ipynb – a Jupyter Notebook\nsp500_data.csv – Financial data.\nsp500_tickers.csv – List of tickers.\n\nCreate a folder named streamlit25 in the default directory using bash command.\nDrag these three files into this folder in your browser.",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Prototyping an app with `streamlit`</span>"
-    ]
-  },
-  {
-    "objectID": "chapter3.html#start-from-a-.ipynb-file",
-    "href": "chapter3.html#start-from-a-.ipynb-file",
-    "title": "4  Prototyping an app with streamlit",
-    "section": "4.2 Start from a .ipynb file",
-    "text": "4.2 Start from a .ipynb file\n\nDownload the following files from Canvas course.\n\nCompute Financial Ratios Notebook.ipynb – a Jupyter Notebook\nsp500_data.csv – Financial data.\nsp500_tickers.csv – List of tickers.\n\nCreate a folder named streamlit25 in the default directory using bash command.\nDrag these three files into this folder in your browser.",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Prototyping an app with `streamlit`</span>"
-    ]
-  },
-  {
-    "objectID": "chapter3.html#make-it-a-.py-file-with-functions",
-    "href": "chapter3.html#make-it-a-.py-file-with-functions",
-    "title": "4  Prototyping an app with streamlit",
-    "section": "4.2 Make it a .py file with functions",
-    "text": "4.2 Make it a .py file with functions\nThe syntax of defining a python function.\n\n\n1. Read the Compute Financial Ratios Notebook.ipynb\n2. Add a z-score metric seen in Figure 4.1.\n\n\n\n\n\n\n\nFigure 4.1: Z-score reference\n\n\n\n\n3. Make a empty finratios.py script file inside the same folder using bash command.\n4. Re-write the notebook code into reusable functions inside finratios.py\n\n‘fetch_data_local’\nfetch_data_local_single_ticker\ncalculate_metrics\nplot_trend\n\n\nGood practices:\n\nEach function should do one clear thing (e.g., load data, compute metrics, or plot)\nWhen writing functions, only use variables that come from the input parameters. If you need to use something inside the function, then make them input parameters.\n\n\n\n\n\n\n\nWarning⚠️ Be Careful with Function Inputs\n\n\n\nDon’t rely on variables that aren’t passed into your function.\nIf your function can’t run using only its inputs, it’s not truly reusable.\n✅ Do this:\ndef compute_margin(revenue, cost):\n    return (revenue - cost) / revenue\n🚫 Not this:\ntotal_revenue = 1000\ndef compute_margin(cost):\n    return (total_revenue - cost) / total_revenue  \n    # works in notebook, breaks in module\n\n\n\nDecide on return values.\n\nAdd a if __name__ == \"__main__\": for testing at the bottom of finratios.py, such as:\n\nif __name__ == \"__main__\":\n    # Simple test cases\n    print(compute_pe_ratio(1000000, 50000, 30))",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Prototyping an app with `streamlit`</span>"
-    ]
-  },
-  {
-    "objectID": "chapter3.html#learn-a-bit-about-streamlit",
-    "href": "chapter3.html#learn-a-bit-about-streamlit",
-    "title": "4  Prototyping an app with streamlit",
-    "section": "4.4 Learn a bit about Streamlit",
-    "text": "4.4 Learn a bit about Streamlit\n\n\n\n\n\n\nTip\n\n\n\nYou don’t know what Streamlit can do. Streamlit doesn’t know what you want.\nBut, we’ve gotta start somewhere.\nSo let’s learn a bit. Once you know what it can do,\nyou’ll finally know what you can make it do (with AI’s help).\n\n\n\n\n\n\n\n\nTipHow learn to use a new Python package?\n\n\n\n\nWhat is Streamlit, and where is its API reference and official documentation?\nWhat can Streamlit do — what kinds of apps or problems is it best at solving?\nWhat small examples or experiments can I build to quickly discover and learn its core features?\n\n\n\n\nStart with the official docs and examples — skim the Streamlit docs homepage and gallery to get a mental map of what’s possible before diving into code.\nLearn by doing small experiments — build micro-apps (e.g., one with a button, one with a chart) to turn reading into muscle memory.\n\nE.g., create app1.py, app2.py files each to test and run some micro streamlit apps.\n\nRead code, not just tutorials — explore community demos or open-source Streamlit apps to see how others structure layouts, manage state, and handle inputs.\nIterate with feedback loops — run streamlit run app.py often and tweak one thing at a time; immediate visual feedback accelerates understanding.\nReflect and generalize — after each mini-project, note what patterns repeat (e.g., sidebar widgets, caching, layout control) to build knowledge for future tools.",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Prototyping an app with `streamlit`</span>"
-    ]
-  },
-  {
-    "objectID": "chapter3.html#build-a-streamlit-app",
-    "href": "chapter3.html#build-a-streamlit-app",
-    "title": "4  Prototyping an app with streamlit",
-    "section": "4.5 Build a Streamlit app",
-    "text": "4.5 Build a Streamlit app\nHere is an example. Try to build a dashboard displaying the financial metrics interactively.\n\n\n\nAn Streamlit Example",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Prototyping an app with `streamlit`</span>"
-    ]
-  },
-  {
-    "objectID": "chapter2.html#summary-table-common-bash-commands",
-    "href": "chapter2.html#summary-table-common-bash-commands",
-    "title": "3  Labs: Minimal Technical Skills Required",
-    "section": "3.3 Summary Table – Common Bash Commands",
-    "text": "3.3 Summary Table – Common Bash Commands\n\n\n\nCommand\nPurpose\nExample\n\n\n\n\npwd\nPrint working directory\npwd\n\n\nls\nList files and folders\nls -la\n\n\ncd\nChange directory\ncd /workspaces/codespaces-jupyter\n\n\nmkdir\nMake a new directory\nmkdir data\n\n\nrmdir\nRemove an empty directory\nrmdir temp_folder\n\n\ntouch\nCreate an empty file\ntouch notes.txt\n\n\ncp\nCopy a file\ncp notes.txt backup/\n\n\nmv\nMove or rename a file\nmv old.txt new.txt\n\n\ncat\nView contents of a file\ncat notes.txt\n\n\nrm\nRemove a file or folder\nrm -r foldername\n\n\nclear\nClear the screen\nclear\n\n\nexit\nExit the terminal\nexit\n\n\n\n\n3.3.1 Lab: create the scripts folder\nUsing the bash terminal to create a scripts folder under GitHub default working dir /workspaces/codespaces-jupyter, and create an empty my_script.py file in the scripts folder.\n\n\n\n\n\n\nTipTip\n\n\n\nYou may find the commands pwd, mkdir, ls, cd, and touch helpful for completing this exercise.\n\n\nYour task is to:\n\nVerify your current working directory.\n\nCreate a new folder called scripts inside the project root.\n\nList the directory contents to confirm that scripts was created successfully.\n\nNavigate into the scripts folder.\n\nConfirm it is empty.\n\nCreate a new Python file named my_script.py inside the scripts folder.\n\nWrite the Bash commands needed to accomplish each step.\nOnce you complete the task, your explorer should look like below:\n\n\n\n\n\n\n\nCautionSolution\n\n\n\n\n\n@tianyuan09 ➜ /workspaces/codespaces-jupyter (main) $ pwd\n/workspaces/codespaces-jupyter\n@tianyuan09 ➜ /workspaces/codespaces-jupyter (main) $ mkdir scripts\n@tianyuan09 ➜ /workspaces/codespaces-jupyter (main) $ ls\nREADME.md  _quarto.yml  bash.qmd  chapter0.qmd  chapter1.qmd  chapter2.qmd  chapter3.qmd  docs  images  index.qmd  references.bib  data  project  results  logs  scripts\n@tianyuan09 ➜ /workspaces/codespaces-jupyter (main) $ cd scripts\n@tianyuan09 ➜ /workspaces/codespaces-jupyter/scripts (main) $ ls\n@tianyuan09 ➜ /workspaces/codespaces-jupyter/scripts (main) $ touch my_script.py",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Labs: Minimal Technical Skills Required</span>"
-    ]
-  },
-  {
-    "objectID": "chapter2.html#h2-dir-in-codespaces",
-    "href": "chapter2.html#h2-dir-in-codespaces",
-    "title": "3  Labs: Minimal Technical Skills Required",
-    "section": "3.3 Directory Structure in GitHub Codespace Terminal",
-    "text": "3.3 Directory Structure in GitHub Codespace Terminal\n/\n├── bin/\n├── boot/\n├── dev/\n├── etc/\n├── home/\n│   └── codespace/          ← your user home directory if you do `cd ~`\n├── lib/\n├── lib64/\n├── media/\n├── mnt/\n├── opt/\n├── proc/\n├── root/\n├── run/\n├── sbin/\n├── srv/\n├── sys/\n├── tmp/\n├── usr/\n└── workspaces/\n    └── codespaces-jupyter     ← your GitHub repo (default working dir)\n\n\n3.3.1 Bash in VS Codespaces\nRestart your GitHub Codespaces.\n\nMake sure you can see the Terminal panel. If you accidently closed your terminal, you can always start one (or many) following the steps below.\n\nYou also can start a second terminal via the Terminal panel.\n\nWe are going to learn basic bash commands to:\n\nNavigate and manage files\nRun Python (.py) scripts directly from the command line\nWork efficiently within server-based or local terminal environments\n\nUse your GitHub Codespace terminal in VS Code to practice these commands. If you close the terminal, reopen it via View → Terminal or the Ctrl+` shortcut.\n\n\n3.3.2 Lab: Linux and bash\n\nDisplay info about the operating system.\n\ncat /etc/*-release\n\nDisplay the Linux kernel version and build info.\n\ncat /proc/version\n\n\n3.3.3 Lab: Paths, Folders, Directories (pwd)\n\nPrint your current working directory (the folder you are “in”). A directory is a folder, directory and folder are the same thing.\n\npwd\n#/workspaces/codespaces-jupyter\nPlease type pwd 5 times and each time say “print working directory”.\nWhen to use pwd? if you lost in folders and don’t know where you are in the directories or folders, pwd will tell you where you are.\n\n\n3.3.4 Lab: List Directory (ls)\nThe ls command is used to list files and folders in a directory.\nHere are some of the most commonly used ones with options (such as -a, -l)\n# List files and folders in the current directory\nls\n\n# List **all** files, including hidden ones (those starting with .)\nls -a\n\n# List files in a detailed (**long**) format — shows permissions, owner, size, and date\nls -l\n\n# Combine options: show all files in detailed view\nls -la\n\n# Sort files by modification **time** (newest first)\nls -lt\n\n\n3.3.5 Lab: Change Directory (cd)\n\ncd data: go the data folder under the current directory (create it first if it doesn’t exist).\ncd ..: go the parent folder.\ncd ~: go to the home folder. In Codespaces, the home folder is /home/codespace. If you are lost in a directory and want to start over from a safe directory – your home. You can type cd ~, and you will be taken to the home directory.\n\n# go into a data folder under your repo root\nls\ncd data\nls\n# see the \"altantis.csv\"\n\n# Move up one folder (to the parent directory /workspaces/codespaces-jupyter)\ncd ..\n\n# Go back to your \"home\" folder (/home/codespace in Codespaces)\ncd ~\npwd\n\n# To-do: find a way to go back to the: workspaces/codespaces-jupyter. \n# If you failed, simply start a new terminal. \n\n\n3.3.6 Lab: Make A Directory (mkdir)\n# From your repo root, create a new folder named \"data\"\ncd /workspaces/codespaces-jupyter\nmkdir data\n\n# Make multiple folders at once\nmkdir project results logs\n\n# Check that they were created\nls\n\n\n3.3.7 Lab: curl\nGo to the \"data\" directory, and download a file from the internet. in curl -O &lt;URL&gt;, -O stands for saving file with the same name as on the web server.\n# Go to the \"data\" Directory\n\ncd /workspaces/codespaces-jupyter/data\n\n# Download a small sample text file and save it with the same name. \ncurl -O https://raw.githubusercontent.com/jbrownlee/Datasets/master/pima-indians-diabetes.data.csv\n\n# List files to confirm it’s there\nls\n\n\n3.3.8 Lab: Clear the Screen (clear)\n# Clear the terminal screen\nclear\n\n\n3.3.9 Lab: Remove Directory (rmdir)\n# Create an empty folder named \"temp_folder\"\nmkdir temp_folder\n\n# Remove the empty folder\nrmdir temp_folder\n\n# Create multiple empty folders and remove them\nmkdir folder1 folder2\nrmdir folder1 folder2\n\n\n3.3.10 Lab: Making Empty Files (touch)\n# Create an empty file named \"notes.txt\"\ntouch notes.txt\n\n# Create multiple files at once\ntouch a.txt b.txt c.txt\n\n# Verify files were created\nls\n\n\n3.3.11 Lab: Copy a File (cp)\n# Copy a file to a new file\ncp notes.txt notes_backup.txt\n\n# Create a folder to copy into\nmkdir backup\n\n# Copy a file into a different folder\ncp notes.txt backup/\n\n# Check the results\nls backup\n\n\n3.3.12 Lab: Moving/Rename a File (mv)\n# Move a file into a different folder\nmv notes_backup.txt backup/\n\n# Rename a file\nmv notes.txt todo.txt\n\n# Verify the changes\nls\n\n\n3.3.13 Lab: Stream a File (cat)\n# Display the contents of a file\ncat todo.txt\n\n# To-do: Display the README.md file in your repository:\n\n\n# Display a system file (try this!)\ncat /etc/*-release\n\n\n3.3.14 Lab: Removing a File (rm)\n# Create some temporary files first\ntouch old.txt temp.txt sample.txt\n\n# Remove a single file\nrm old.txt\n\n# Remove multiple files\nrm temp.txt sample.txt\n\n# Remove an entire folder and its contents (be careful!)\nrm -r backup\n\n\n3.3.15 Lab: Exiting Your Terminal (exit)\n# Exit the current terminal session\nexit",
+    "text": "3.1 Lab: GitHub Codespaces",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Labs: Minimal Technical Skills Required</span>"
     ]
@@ -430,16 +120,6 @@
     ]
   },
   {
-    "objectID": "chapter2.html#ipynb-notebook-vs-.py-script-files",
-    "href": "chapter2.html#ipynb-notebook-vs-.py-script-files",
-    "title": "3  Labs: Minimal Technical Skills Required",
-    "section": "3.4 .ipynb Notebook vs .py Script Files",
-    "text": "3.4 .ipynb Notebook vs .py Script Files\nFigure 3.1 illustrates the difference between running Python code in .ipynb notebook versus in `.py’ script file.\n\n\n\n\n\n\nFigure 3.1: Comparison of Jupyter Notebook and Python Script formats\n\n\n\nUnderstanding the Terminal\nSee directory structure in codespaces in the previous chapter.\nIn the terminal, it always starts with:\n\n@tianyuan09 ➜ /workspaces/codespaces-jupyter (main) $.\n\n@tianyuan09 ➜ /workspaces/codespaces-jupyter (main) $\n│           │                 │                   │\n│           │                 │                   └─ Prompt symbol ($): \n│           │                 │                      shows the terminal is ready for input\n│           │                 │\n│           │                 └─ Current working directory:\n│           │                    you’re inside the folder “codespaces-jupyter”\n│           │                    located under “/workspaces”\n│           │\n│           └─ Arrow (➜): \n│               just a decorative separator in the prompt\n│\n└─ Username (and sometimes host): \n   “tianyuan09” — the current user logged into this environment\nDifference between .ipynb Notebook and .py Script File.\n\n\n\n\n\n\n\n\nFeature\n.ipynb (Jupyter Notebook)\n.py (Python Script)\n\n\n\n\nStructure\nStructured JSON format combining code, text cells in Markdown, and outputs.\nPlain text file containing only Python code and comments #.\n\n\nExecution\nRun one cell at a time, showing output immediately below each cell.\nExecuted all at once using a command like python my_script.py, seen ④ in Figure 3.1.\n\n\nUse Case\nIdeal for data analysis, visualization, and teaching due to its interactive nature.\nBetter for automation, deployment of production-ready code.\n\n\n\n\n3.4.1 Lab: Create and run a .py script file\nFirst, let’s create a hello.py under the scripts folder.\n# file path: scripts/hello.py\nprint(\"Hello from Python!\")\nprint(\"This script is running from the terminal.\")\n\n# Get current date and time\nimport datetime\nnow = datetime.datetime.now()\nprint(f\"Current time: {now}\")\nYou can directly use explorer or use bash command Figure 3.2.\n\n\n\n\n\n\nFigure 3.2: Create and run your 1st script file\n\n\n\nExpected output:\nHello from Python!\nThis script is running from the terminal.\nCurrent time: 2026-01-13 10:30:45.123456\n\n\n\n3.4.2 Lab: Checking Your Python Version\n# Check Python version\npython --version\npython3 --version\n\n# Check which Python executable you're using\nwhich python\nwhich python3\n\n\n3.4.3 Lab: Different Python Commands\nDepending on your system setup, you might need to use different commands:\n# On systems with Python 3 as default\npython hello.py\n\n# OR\npython3 hello.py\n\n# OR Using specific Python version\npython3.9 hello.py\npython3.12 hello.py",
-    "crumbs": [
-      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Labs: Minimal Technical Skills Required</span>"
-    ]
-  },
-  {
     "objectID": "chapter2.html#running-scripts-in-different-directories.",
     "href": "chapter2.html#running-scripts-in-different-directories.",
     "title": "3  Labs: Minimal Technical Skills Required",
@@ -447,6 +127,36 @@
     "text": "3.4 Running Scripts in Different Directories.\n\n3.4.1 Absolute Paths\n# Run script from anywhere using absolute path\npython /Users/username/projects/my_script.py\n/Users/username/projects/my_script.py is a absolute file path.\nAbsolute paths:\n\nOn macOS/Linux, starts with /.\nOn Windows, starts with a drive letter like C:/.\nIn short, it always starts from the root of the filesystem (the top level).\n\nYou can find either the relative or aboslute file paths in codespaces:\n\n\n\n3.4.2 Relative Paths\n# Run script in current directory\npython ./script.py\n\n# Run script in subdirectory\npython scripts/data_analysis.py\n\n# Run script in parent directory\npython ../utilities/helper.py\nThe paths above (e.g. ../utilities/helper.py) are relative paths.\n\nThey don’t start with / or a drive letter (e.g. C:/).\nThey may include . (current folder) or .. (parent folder).\nThey starts from your current working directory (pwd).\n\n\n\n3.4.3 Difference in absolute vs relative paths\n\n\n\nStarts With\nType\nMeaning\n\n\n\n\n/ (Linux/Mac)\nAbsolute\nStarts at root of file system\n\n\nC:\\ (Windows)\nAbsolute\nStarts at root of drive\n\n\n. or ..\nRelative\nBased on current working directory\n\n\nNo / or C:\\\nRelative\nImplied to start from current folder",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Labs: Minimal Technical Skills Required</span>"
+    ]
+  },
+  {
+    "objectID": "chapter3.html",
+    "href": "chapter3.html",
+    "title": "4  Prototyping an app with streamlit",
+    "section": "",
+    "text": "4.1 Context and Goal\nYou are going to prototype an interactive financial dashboard app using Vibe Coding.\nData scientists often start in Jupyter Notebooks for exploration and analysis. However, real-world applications require deployable, interactive dashboards for sharing insights with others.\nYou are provided with the some preliminary analyses of financial data in Jupyter notebook. You are tasked to refactor it and create an Streamlit web application to present the data in an interactive way.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Prototyping an app with `streamlit`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter3.html#context-and-goal",
+    "href": "chapter3.html#context-and-goal",
+    "title": "4  Prototyping an app with streamlit",
+    "section": "",
+    "text": "ImportantGoal\n\n\n\nTransition from a prototype .ipynb file to a production-ready .py file that builds an interactive Streamlit dashboard.\n\n\n\n\n\nDownload the following files from the downloads folder in the https://github.com/tianyuan09/fmbaaiworkshop26spring.\n\nCompute Financial Ratios Notebook.ipynb – a Jupyter Notebook\nsp500_data.csv – Financial data.\nsp500_tickers.csv – List of tickers.\n\nCreate a folder named streamlit25 in the default directory using bash command.\nDrag these three files into this folder in your browser.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Prototyping an app with `streamlit`</span>"
+    ]
+  },
+  {
+    "objectID": "chapter3.html#the-vibe-coding-setup",
+    "href": "chapter3.html#the-vibe-coding-setup",
+    "title": "4  Prototyping an app with streamlit",
+    "section": "4.2 The Vibe Coding Setup",
+    "text": "4.2 The Vibe Coding Setup\nYou are going to use VS Code with Copilot in Github codespaces to “vibe code” a dashboard web application. Let’s cover a few basics before you start.\n\nEach Github Codespace runs on a Linux virtual machine that already has tools like Python, Jupyter Notebook support, various packages, and VS Code (via the web interface) preinstalled. When you open a Codespace, you’re actually using VS Code running in your browser, connected to that remote Linux machine. So:\n\nCodespaces = a Linux system in the cloud + Python + JupyterLab + various Python packages + VS Code (IDE interface).\n\n\nYou also can set up the same development environment in your local PC. You will need to install multiple softwares and tools, such as Python, VS Code, Python extension in VS Code, and each python package that you might use (such as pandas).\n\n\n\n\n\n\n\n\nEnvironment\nWhat it includes\nNotes\n\n\n\n\nCodespaces\nLinux + Python + Jupyter + various packages + VS Code (web)\nCloud-hosted; nothing to install locally; runs VS code interface\n\n\nGoogle Colab\nLinux + Python + Jupyter + various packages\nCloud-hosted; focuses on notebook interface\n\n\nLocal PC\nWhatever you install (Python, VS Code, Jupyter)\nRuns directly on your machine\n\n\n\n\n4.2.1 GitHub Copilot and Copilot Chat: Ask, Edit and Agent Modes\nLet’s introduce the features of GitHub Copilot and Copilot Chat. GitHub Copilot comes with four distant modes that you may use:\n\nInline Chat or suggestions: quick in-context code suggestions directly within VS Code using shortcuts ⌘+I or Ctrl+I.\n\n\n\nAsk Mode: best for Q&A. Highlight some code, then ask Copilot questions about its logic, purpose, or braistorm ideas implementation.\nEdit Mode: give you inline, review-ready code edits across the files.\nAgent Mode: an autonomous mode where Copilot analyzes context (e.g., files in your workspace) and performs tasks based on your request.\n\n\n\n\n4.2.2 Tips for Using the Copilot Agent Mode\nTo get the best results in Agent Mode, you can provide additional context or use special commands to guide Copilot about what you want it to do.\n\n\n\n\n\n\nNoteWhat is “Context”?\n\n\n\nContext is the information you give Copilot so it understands what you’re working on and can respond more accurately. In Agent Mode, context can include the code you’ve selected, other .py files, or any extra notes you write with #.\n\n\n\nHighlight code (e.g., line 57-59 of the vscodecopilot.qmd file) in the file will automatically add those lines of code in the context (see Figure 4.1)\nAdd context with #. Add additional files that you want Copilot to read before completing the task.\ncommands with /. E.g. /explain is a command asking for explanation of the code.\n\n\n\n\n\n\n\nFigure 4.1: Highlight code, or add contexts or commands\n\n\n\n\n\n4.2.3 Vibe-coding vs AI-assisted Coding\nUsing the Agent Mode will allow you to vibe code without reading or understanding any of the code. You relied on the AI to produce something that looked right without knowing how it actually worked.\nHowever, if you read, wrote, or edited the code while building the app, you were doing AI-assisted coding — working with the AI to shape logic, fix bugs, and design structure.\n\n\n\n\n\n\n\n\nAspect\nVibe Coding\nAI-Assisted Coding\n\n\n\n\nDefinition\nA no-code workflow where you don’t read, write, or edit code. You simply test the prototype or app to see if it meets your design or intent.\nA coding workflow where you interact with and modify code using AI tools like Copilot’s Ask, Edit, or Inline Chat.\n\n\nGoal\nValidate the “vibe” — check if the prototype looks, feels, and behaves as intended.\nBuild, refine, and ship production-ready features with AI support.\n\n\nUser Interaction\nNo direct code manipulation — focus is on results, not implementation.\nActively generate, read, edit, debug, and review code and suggestions with AI\n\n\nAI Tools\nGitHub Copilot Agent Mode\nGitHub Copilot Ask Mode, Edit Mode, Inline Chat\n\n\nMindset\n“I don’t care how it’s built — does it look and work as intended?”\n“I’ll collaborate with AI to understand, fix, or enhance the code.”\n\n\nBest For\nRapid prototyping, early design validation\nFull-cycle software or data product development: feature implementation, optimization, and maintenance.\n\n\nLimitations.\nIgnores the complexity, lacks of consideration over performance, scalability, and maintainability.\nSupports real data engineering work but still requires developer understanding and validation\n\n\n\nBoth Vibe-coding and AI-assisted coding have their place in development. Use vibe-coding for quick validation and prototyping, and AI-assisted coding for building robust, production-ready data science solutions.\nAlthough vibe-coding feels exciting, you can’t rely on it from prototype to production, as it often makes mistakes or produces “shit code” — duplicated logic, buggy and insecure implementations, and tangled features no one dares to maintain. In data science, that might look like a notebook full of hard-coded file paths, random seeds, and global variables — impossible to reproduce or scale.\n\nAlso, don’t fool yourself into thinking you’re learning to code while working in Agent Mode — you’re NOT building the skills yourself. You can’t learn guitar just by watching someone else play, and you can’t learn piano by watching performances. Likewise, you can’t truly learn programming just by watching an Agent write code for you. The craft lies in understanding, experimenting, and making mistakes. That’s how you move from vibe-coding prototypes to engineered, production-ready solutions.\nWhile vibe coding can accelerate prototyping and help non-technical users validate design ideas, it often overlooks many critical aspects of data engineering — such as scalability, performance, maintainability, and security. Building reliable data science solution or product remains a complex, multi-layered process that requires thoughtful coding, testing, and collaboration between designers, developers, and AI tools.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Prototyping an app with `streamlit`</span>"
     ]
   },
   {
@@ -460,61 +170,11 @@
     ]
   },
   {
-    "objectID": "chapter3.html#a-quick-recap-before-vibe-coding",
-    "href": "chapter3.html#a-quick-recap-before-vibe-coding",
+    "objectID": "chapter3.html#learn-a-bit-about-streamlit",
+    "href": "chapter3.html#learn-a-bit-about-streamlit",
     "title": "4  Prototyping an app with streamlit",
-    "section": "4.2 A Quick Recap Before Vibe Coding",
-    "text": "4.2 A Quick Recap Before Vibe Coding\nYou are going to use VS Code with Copilot in Github codespaces to develop a dashboard app. Let’s cover a few basics before you start.\n\nEach Github Codespace runs on a Linux virtual machine that already has tools like Python, Jupyter Notebook support, various packages, and VS Code (via the web interface) preinstalled. When you open a Codespace, you’re actually using VS Code running in your browser, connected to that remote Linux machine. So:\n\nCodespaces = a Linux system in the cloud + Python + JupyterLab + various Python packages + VS Code (IDE interface).\n\nEach Google Colab notebook, on the other hand, also provides a Linux-based environment with Python and Jupyter Notebooks, but it doesn’t include VS Code.\n\nColab = a Linux system in the cloud + Python + JupyterLab + various python packages.\n\n\n\n\n\n\n\n\nNoteWhy VS Code is not in Colab Notebook?\n\n\n\nVS Code is a Microsoft product, while Colab is a Google product — and it’s unlikely Google would integrate a direct competitor’s tool into its own cloud platform.\n\n\nYou also can set up the same development environment in your local PC. You will need to install multiple softwares and tools, such as Python, VS Code, Python extension in VS Code, and each python package that you might use (such as pandas).\n\n\n\n\n\n\n\n\nEnvironment\nWhat it includes\nNotes\n\n\n\n\nCodespaces\nLinux + Python + Jupyter + various packages + VS Code (web)\nCloud-hosted; nothing to install locally; runs VS code interface\n\n\nColab\nLinux + Python + Jupyter + various packages\nCloud-hosted; focuses on notebook interface\n\n\nLocal PC\nWhatever you install (Python, VS Code, Jupyter)\nRuns directly on your machine",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Prototyping an app with `streamlit`</span>"
-    ]
-  },
-  {
-    "objectID": "chapter3.html#github-copilot-and-copilot-chat-ask-edit-and-agent-modes",
-    "href": "chapter3.html#github-copilot-and-copilot-chat-ask-edit-and-agent-modes",
-    "title": "4  Prototyping an app with streamlit",
-    "section": "4.3 GitHub Copilot and Copilot Chat: Ask, Edit and Agent Modes",
-    "text": "4.3 GitHub Copilot and Copilot Chat: Ask, Edit and Agent Modes\nYou have used Copilot on Day 1 for development of a dashboard using streamlit. let’s review features of GitHub Copilot and Copilot Chat.\nGitHub Copilot comes with four distant modes that you may use:\n\nInline Chat or suggestions: quick in-context code suggestions directly within VS Code using shortcuts ⌘+I or Ctrl+I.\n\n\n\nAsk Mode: best for Q&A. Highlight some code, then ask Copilot questions about its logic, purpose, or braistorm ideas implementation.\nEdit Mode: give you inline, review-ready code edits across the files.\nAgent Mode: an autonomous mode where Copilot analyzes context (e.g., files in your workspace) and performs tasks based on your request.",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Prototyping an app with `streamlit`</span>"
-    ]
-  },
-  {
-    "objectID": "chapter3.html#tips-for-using-the-copilot-agent-mode",
-    "href": "chapter3.html#tips-for-using-the-copilot-agent-mode",
-    "title": "4  Prototyping an app with streamlit",
-    "section": "4.3 Tips for Using the Copilot Agent Mode",
-    "text": "4.3 Tips for Using the Copilot Agent Mode\nTo get the best results in Agent Mode, you can provide additional context or use special commands to guide Copilot about what you want it to do.\n\n\n\n\n\n\nNoteWhat is “Context”?\n\n\n\nContext is the information you give Copilot so it understands what you’re working on and can respond more accurately. In Agent Mode, context can include the code you’ve selected, other .py files, or any extra notes you write with #.\n\n\n\nHighlight code (e.g., line 57-59 of the vscodecopilot.qmd file) in the file will automatically add those lines of code in the context (see Figure 4.1)\nAdd context with #. Add additional files that you want Copilot to read before completing the task.\ncommands with /. E.g. /explain is a command asking for explanation of the code.\n\n\n\n\n\n\n\nFigure 4.1: Highlight code, or add contexts or commands",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Prototyping an app with `streamlit`</span>"
-    ]
-  },
-  {
-    "objectID": "chapter3.html#reflections-on-ai-in-development-workflows",
-    "href": "chapter3.html#reflections-on-ai-in-development-workflows",
-    "title": "4  Prototyping an app with streamlit",
-    "section": "4.3 Reflections on AI in Development Workflows",
-    "text": "4.3 Reflections on AI in Development Workflows\n\n4.3.1 Vibe-coding vs AI-assisted Coding\nOn Day 1, if you used Agent Mode in Copilot to build your Streamlit app — without reading or understanding any of the code — you were vibe-coding. You relied on the AI to produce something that looked right without knowing how it actually worked.\nHowever, if you read, wrote, or edited the code while building the app, you were doing AI-assisted coding — working with the AI to shape logic, fix bugs, and design structure.\n\n\n\n\n\n\n\n\nAspect\nVibe Coding\nAI-Assisted Coding\n\n\n\n\nDefinition\nA no-code workflow where you don’t read, write, or edit code. You simply test the prototype or app to see if it meets your design or intent.\nA coding workflow where you interact with and modify code using AI tools like Copilot’s Ask, Edit, or Inline Chat.\n\n\nGoal\nValidate the “vibe” — check if the prototype looks, feels, and behaves as intended.\nBuild, refine, and ship production-ready features with AI support.\n\n\nUser Interaction\nNo direct code manipulation — focus is on results, not implementation.\nActively generate, read, edit, debug, and review code and suggestions with AI\n\n\nAI Tools\nGitHub Copilot Agent Mode\nGitHub Copilot Ask Mode, Edit Mode, Inline Chat\n\n\nMindset\n“I don’t care how it’s built — does it look and work as intended?”\n“I’ll collaborate with AI to understand, fix, or enhance the code.”\n\n\nBest For\nRapid prototyping, early design validation\nFull-cycle software or data product development: feature implementation, optimization, and maintenance.\n\n\nLimitations.\nIgnores the complexity, lacks of consideration over performance, scalability, and maintainability.\nSupports real data engineering work but still requires developer understanding and validation\n\n\n\n\nI was vibe-coding\nI was doing AI-assisted coding\n\nBoth Vibe-coding and AI-assisted coding have their place in development. Use vibe-coding for quick validation and prototyping, and AI-assisted coding for building robust, production-ready data science solutions.\nAlthough vibe-coding feels exciting, you can’t rely on it from prototype to production, as it often makes mistakes or produces “shit code” — duplicated logic, buggy and insecure implementations, and tangled features no one dares to maintain. In data science, that might look like a notebook full of hard-coded file paths, random seeds, and global variables — impossible to reproduce or scale.\n\nAlso, don’t fool yourself into thinking you’re learning to code while working in Agent Mode — you’re NOT building the skills yourself. You can’t learn guitar just by watching someone else play, and you can’t learn piano by watching performances. Likewise, you can’t truly learn programming just by watching an Agent write code for you. The craft lies in understanding, experimenting, and making mistakes. That’s how you move from vibe-coding prototypes to engineered, production-ready solutions.\n\n\n4.3.2 Why the Basics Still Matters?\n\nWhy isn’t vibe coding enough for real-world data science projects?\n\nWhile vibe coding can accelerate prototyping and help non-technical users validate design ideas, it often overlooks many critical aspects of data engineering — such as scalability, performance, maintainability, and security. Building reliable data science solution or product remains a complex, multi-layered process that requires thoughtful coding, testing, and collaboration between designers, developers, and AI tools.\n\n\n\n\n\n\nImportantBest tip for using AI:\n\n\n\nStay focused on what really matters — let AI speed up the work, but make sure you’re the one driving the direction, decisions, and understanding.",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Prototyping an app with `streamlit`</span>"
-    ]
-  },
-  {
-    "objectID": "chapter3.html#before-vibe-coding",
-    "href": "chapter3.html#before-vibe-coding",
-    "title": "4  Prototyping an app with streamlit",
-    "section": "4.2 Before Vibe Coding",
-    "text": "4.2 Before Vibe Coding\nYou are going to use VS Code with Copilot in Github codespaces to develop a dashboard app. Let’s cover a few basics before you start.\n\nEach Github Codespace runs on a Linux virtual machine that already has tools like Python, Jupyter Notebook support, various packages, and VS Code (via the web interface) preinstalled. When you open a Codespace, you’re actually using VS Code running in your browser, connected to that remote Linux machine. So:\n\nCodespaces = a Linux system in the cloud + Python + JupyterLab + various Python packages + VS Code (IDE interface).\n\nEach Google Colab notebook, on the other hand, also provides a Linux-based environment with Python and Jupyter Notebooks, but it doesn’t include VS Code.\n\nColab = a Linux system in the cloud + Python + JupyterLab + various python packages.\n\n\n\n\n\n\n\n\nNoteWhy VS Code is not in Colab Notebook?\n\n\n\nVS Code is a Microsoft product, while Colab is a Google product — and it’s unlikely Google would integrate a direct competitor’s tool into its own cloud platform.\n\n\nYou also can set up the same development environment in your local PC. You will need to install multiple softwares and tools, such as Python, VS Code, Python extension in VS Code, and each python package that you might use (such as pandas).\n\n\n\n\n\n\n\n\nEnvironment\nWhat it includes\nNotes\n\n\n\n\nCodespaces\nLinux + Python + Jupyter + various packages + VS Code (web)\nCloud-hosted; nothing to install locally; runs VS code interface\n\n\nColab\nLinux + Python + Jupyter + various packages\nCloud-hosted; focuses on notebook interface\n\n\nLocal PC\nWhatever you install (Python, VS Code, Jupyter)\nRuns directly on your machine",
-    "crumbs": [
-      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Prototyping an app with `streamlit`</span>"
-    ]
-  },
-  {
-    "objectID": "chapter3.html#the-vibe-coding-setup",
-    "href": "chapter3.html#the-vibe-coding-setup",
-    "title": "4  Prototyping an app with streamlit",
-    "section": "4.2 The Vibe Coding Setup",
-    "text": "4.2 The Vibe Coding Setup\nYou are going to use VS Code with Copilot in Github codespaces to “vibe code” a dashboard web application. Let’s cover a few basics before you start.\n\nEach Github Codespace runs on a Linux virtual machine that already has tools like Python, Jupyter Notebook support, various packages, and VS Code (via the web interface) preinstalled. When you open a Codespace, you’re actually using VS Code running in your browser, connected to that remote Linux machine. So:\n\nCodespaces = a Linux system in the cloud + Python + JupyterLab + various Python packages + VS Code (IDE interface).\n\n\nYou also can set up the same development environment in your local PC. You will need to install multiple softwares and tools, such as Python, VS Code, Python extension in VS Code, and each python package that you might use (such as pandas).\n\n\n\n\n\n\n\n\nEnvironment\nWhat it includes\nNotes\n\n\n\n\nCodespaces\nLinux + Python + Jupyter + various packages + VS Code (web)\nCloud-hosted; nothing to install locally; runs VS code interface\n\n\nGoogle Colab\nLinux + Python + Jupyter + various packages\nCloud-hosted; focuses on notebook interface\n\n\nLocal PC\nWhatever you install (Python, VS Code, Jupyter)\nRuns directly on your machine\n\n\n\n\n4.2.1 GitHub Copilot and Copilot Chat: Ask, Edit and Agent Modes\nLet’s introduce the features of GitHub Copilot and Copilot Chat. GitHub Copilot comes with four distant modes that you may use:\n\nInline Chat or suggestions: quick in-context code suggestions directly within VS Code using shortcuts ⌘+I or Ctrl+I.\n\n\n\nAsk Mode: best for Q&A. Highlight some code, then ask Copilot questions about its logic, purpose, or braistorm ideas implementation.\nEdit Mode: give you inline, review-ready code edits across the files.\nAgent Mode: an autonomous mode where Copilot analyzes context (e.g., files in your workspace) and performs tasks based on your request.\n\n\n\n\n4.2.2 Tips for Using the Copilot Agent Mode\nTo get the best results in Agent Mode, you can provide additional context or use special commands to guide Copilot about what you want it to do.\n\n\n\n\n\n\nNoteWhat is “Context”?\n\n\n\nContext is the information you give Copilot so it understands what you’re working on and can respond more accurately. In Agent Mode, context can include the code you’ve selected, other .py files, or any extra notes you write with #.\n\n\n\nHighlight code (e.g., line 57-59 of the vscodecopilot.qmd file) in the file will automatically add those lines of code in the context (see Figure 4.1)\nAdd context with #. Add additional files that you want Copilot to read before completing the task.\ncommands with /. E.g. /explain is a command asking for explanation of the code.\n\n\n\n\n\n\n\nFigure 4.1: Highlight code, or add contexts or commands\n\n\n\n\n\n4.2.3 Vibe-coding vs AI-assisted Coding\nUsing the Agent Mode will allow you to vibe code without reading or understanding any of the code. You relied on the AI to produce something that looked right without knowing how it actually worked.\nHowever, if you read, wrote, or edited the code while building the app, you were doing AI-assisted coding — working with the AI to shape logic, fix bugs, and design structure.\n\n\n\n\n\n\n\n\nAspect\nVibe Coding\nAI-Assisted Coding\n\n\n\n\nDefinition\nA no-code workflow where you don’t read, write, or edit code. You simply test the prototype or app to see if it meets your design or intent.\nA coding workflow where you interact with and modify code using AI tools like Copilot’s Ask, Edit, or Inline Chat.\n\n\nGoal\nValidate the “vibe” — check if the prototype looks, feels, and behaves as intended.\nBuild, refine, and ship production-ready features with AI support.\n\n\nUser Interaction\nNo direct code manipulation — focus is on results, not implementation.\nActively generate, read, edit, debug, and review code and suggestions with AI\n\n\nAI Tools\nGitHub Copilot Agent Mode\nGitHub Copilot Ask Mode, Edit Mode, Inline Chat\n\n\nMindset\n“I don’t care how it’s built — does it look and work as intended?”\n“I’ll collaborate with AI to understand, fix, or enhance the code.”\n\n\nBest For\nRapid prototyping, early design validation\nFull-cycle software or data product development: feature implementation, optimization, and maintenance.\n\n\nLimitations.\nIgnores the complexity, lacks of consideration over performance, scalability, and maintainability.\nSupports real data engineering work but still requires developer understanding and validation\n\n\n\nBoth Vibe-coding and AI-assisted coding have their place in development. Use vibe-coding for quick validation and prototyping, and AI-assisted coding for building robust, production-ready data science solutions.\nAlthough vibe-coding feels exciting, you can’t rely on it from prototype to production, as it often makes mistakes or produces “shit code” — duplicated logic, buggy and insecure implementations, and tangled features no one dares to maintain. In data science, that might look like a notebook full of hard-coded file paths, random seeds, and global variables — impossible to reproduce or scale.\n\nAlso, don’t fool yourself into thinking you’re learning to code while working in Agent Mode — you’re NOT building the skills yourself. You can’t learn guitar just by watching someone else play, and you can’t learn piano by watching performances. Likewise, you can’t truly learn programming just by watching an Agent write code for you. The craft lies in understanding, experimenting, and making mistakes. That’s how you move from vibe-coding prototypes to engineered, production-ready solutions.\nWhile vibe coding can accelerate prototyping and help non-technical users validate design ideas, it often overlooks many critical aspects of data engineering — such as scalability, performance, maintainability, and security. Building reliable data science solution or product remains a complex, multi-layered process that requires thoughtful coding, testing, and collaboration between designers, developers, and AI tools.",
+    "section": "4.4 Learn a bit about Streamlit",
+    "text": "4.4 Learn a bit about Streamlit\n\n\n\n\n\n\nTip\n\n\n\nYou don’t know what Streamlit can do. Streamlit doesn’t know what you want.\nBut, we’ve gotta start somewhere.\nSo let’s learn a bit. Once you know what it can do,\nyou’ll finally know what you can make it do (with AI’s help).\n\n\n\n\n\n\n\n\nTipHow learn to use a new Python package?\n\n\n\n\nWhat is Streamlit, and where is its API reference and official documentation?\nWhat can Streamlit do — what kinds of apps or problems is it best at solving?\nWhat small examples or experiments can I build to quickly discover and learn its core features?\n\n\n\n\nStart with the official docs and examples — skim the Streamlit docs homepage and gallery to get a mental map of what’s possible before diving into code.\nLearn by doing small experiments — build micro-apps (e.g., one with a button, one with a chart) to turn reading into muscle memory.\n\nE.g., create app1.py, app2.py files each to test and run some micro streamlit apps.\n\nRead code, not just tutorials — explore community demos or open-source Streamlit apps to see how others structure layouts, manage state, and handle inputs.\nIterate with feedback loops — run streamlit run app.py often and tweak one thing at a time; immediate visual feedback accelerates understanding.\nReflect and generalize — after each mini-project, note what patterns repeat (e.g., sidebar widgets, caching, layout control) to build knowledge for future tools.",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Prototyping an app with `streamlit`</span>"
     ]
