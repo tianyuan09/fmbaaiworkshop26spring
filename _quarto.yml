@@ -8,16 +8,29 @@ execute:
 bibliography: references.bib
 
 book:
-  title: "FM Business Analytics AI Workshop"
-  author: "Your Name"
+  title: "FMBA AI Workshop Jan 2026"
+  author: "Yuan Tian"
   date: today
   chapters:
     - index.qmd
+    - chapter0.qmd
     - chapter1.qmd
+    - chapter2.qmd
+    - chapter3.qmd
 
 format:
   html:
-    theme: cosmo
+    theme:
+#      - sandstone
+      - brite
+#      - minty
+#      - flatly
+#      - brand
     toc: true
+    toc-depth: 3
     number-sections: true
     code-fold: true
+    code-summary: "Click to expand/collapse"
+  pdf:
+    documentclass: scrreprt
+

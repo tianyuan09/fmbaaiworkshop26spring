@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.8.25">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>4&nbsp; Prototyping an app with streamlit – FMBA AI Workshop Jan 2026</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./chapter2.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-065a5179aebd64318d7ea99d77b64a9e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-389dc5fa432510b2a365d7aa80defd6f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+
+
+</head>
+
+<body class="nav-sidebar floating quarto-light">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter3.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prototyping an app with <code>streamlit</code></span></a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+      <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
+        <i class="bi bi-search"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
+      <a href="./index.html" class="sidebar-logo-link">
+      </a>
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">FMBA AI Workshop Jan 2026</a> 
+    </div>
+      </div>
+        <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+        </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Welcome</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter0.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">AI Tools for Coding</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter1.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">What is Vibe Coding</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter2.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Labs: Minimal Technical Skills Required</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter3.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prototyping an app with <code>streamlit</code></span></span></a>
+  </div>
+</li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#context-and-goal" id="toc-context-and-goal" class="nav-link active" data-scroll-target="#context-and-goal"><span class="header-section-number">4.1</span> Context and Goal</a></li>
+  <li><a href="#the-vibe-coding-setup" id="toc-the-vibe-coding-setup" class="nav-link" data-scroll-target="#the-vibe-coding-setup"><span class="header-section-number">4.2</span> The Vibe Coding Setup</a>
+  <ul class="collapse">
+  <li><a href="#github-copilot-and-copilot-chat-ask-edit-and-agent-modes" id="toc-github-copilot-and-copilot-chat-ask-edit-and-agent-modes" class="nav-link" data-scroll-target="#github-copilot-and-copilot-chat-ask-edit-and-agent-modes"><span class="header-section-number">4.2.1</span> GitHub Copilot and Copilot Chat: Ask, Edit and Agent Modes</a></li>
+  <li><a href="#tips-for-using-the-copilot-agent-mode" id="toc-tips-for-using-the-copilot-agent-mode" class="nav-link" data-scroll-target="#tips-for-using-the-copilot-agent-mode"><span class="header-section-number">4.2.2</span> Tips for Using the Copilot Agent Mode</a></li>
+  <li><a href="#vibe-coding-vs-ai-assisted-coding" id="toc-vibe-coding-vs-ai-assisted-coding" class="nav-link" data-scroll-target="#vibe-coding-vs-ai-assisted-coding"><span class="header-section-number">4.2.3</span> Vibe-coding vs AI-assisted Coding</a></li>
+  </ul></li>
+  <li><a href="#lab-make-it-a-.py-file-with-functions" id="toc-lab-make-it-a-.py-file-with-functions" class="nav-link" data-scroll-target="#lab-make-it-a-.py-file-with-functions"><span class="header-section-number">4.3</span> Lab: Make it a <code>.py</code> file with functions</a></li>
+  <li><a href="#learn-a-bit-about-streamlit" id="toc-learn-a-bit-about-streamlit" class="nav-link" data-scroll-target="#learn-a-bit-about-streamlit"><span class="header-section-number">4.4</span> Learn a bit about Streamlit</a></li>
+  <li><a href="#prototype-a-streamlit-app" id="toc-prototype-a-streamlit-app" class="nav-link" data-scroll-target="#prototype-a-streamlit-app"><span class="header-section-number">4.5</span> Prototype a Streamlit app</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prototyping an app with <code>streamlit</code></span></h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<section id="context-and-goal" class="level2" data-number="4.1">
+<h2 data-number="4.1" class="anchored" data-anchor-id="context-and-goal"><span class="header-section-number">4.1</span> Context and Goal</h2>
+<p><strong>You are going to prototype an interactive financial dashboard app using Vibe Coding.</strong></p>
+<div class="callout callout-style-default callout-important callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Goal
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Transition from a prototype <code>.ipynb</code> file to a production-ready <code>.py</code> file that builds an interactive Streamlit dashboard.</p>
+</div>
+</div>
+<p>Data scientists often start in <strong>Jupyter Notebooks for exploration and analysis</strong>. However, real-world applications require <strong>deployable, interactive dashboards</strong> for sharing insights with others.</p>
+<p>You are provided with the some preliminary analyses of financial data in Jupyter notebook. You are tasked to refactor it and <strong>create an Streamlit web application</strong> to present the data in an interactive way.</p>
+<ul class="task-list">
+<li><p><label><input type="checkbox">Download the following files from the <code>downloads</code> folder in the <a href="https://github.com/tianyuan09/fmbaaiworkshop26spring" class="uri">https://github.com/tianyuan09/fmbaaiworkshop26spring</a>.</label></p>
+<ul>
+<li><code>Compute Financial Ratios Notebook.ipynb</code> – a Jupyter Notebook</li>
+<li><code>sp500_data.csv</code> – Financial data.</li>
+<li><code>sp500_tickers.csv</code> – List of tickers.</li>
+</ul></li>
+<li><p><label><input type="checkbox">Create a folder named <code>streamlit25</code> in the default directory using bash command.</label></p></li>
+<li><p><label><input type="checkbox">Drag these three files into this folder in your browser.</label></p></li>
+</ul>
+</section>
+<section id="the-vibe-coding-setup" class="level2" data-number="4.2">
+<h2 data-number="4.2" class="anchored" data-anchor-id="the-vibe-coding-setup"><span class="header-section-number">4.2</span> The Vibe Coding Setup</h2>
+<p>You are going to use VS Code with Copilot in Github codespaces to “vibe code” a dashboard web application. Let’s cover a few basics before you start.</p>
+<ul>
+<li><p>Each <strong>Github Codespace</strong> runs on a <strong>Linux virtual machine</strong> that already has tools like <strong>Python, Jupyter Notebook support, various packages, and VS Code (via the web interface)</strong> preinstalled. When you open a Codespace, you’re actually using VS Code running in your browser, connected to that remote Linux machine. So:</p>
+<ul>
+<li><strong>Codespaces = a Linux system in the cloud + Python + JupyterLab + various Python packages + VS Code (IDE interface)</strong>.</li>
+</ul></li>
+</ul>
+<p>You also can set up the same development environment in your local PC. You will need to install multiple softwares and tools, such as Python, VS Code, Python extension in VS Code, and each python package that you might use (such as <code>pandas</code>).</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 13%">
+<col style="width: 45%">
+<col style="width: 41%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Environment</th>
+<th>What it includes</th>
+<th>Notes</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Codespaces</strong></td>
+<td>Linux + Python + Jupyter + various packages + <strong><em>VS Code (web)</em></strong></td>
+<td>Cloud-hosted; nothing to install locally; runs VS code interface</td>
+</tr>
+<tr class="even">
+<td><strong>Google Colab</strong></td>
+<td>Linux + Python + Jupyter + various packages</td>
+<td>Cloud-hosted; focuses on notebook interface</td>
+</tr>
+<tr class="odd">
+<td><strong>Local PC</strong></td>
+<td>Whatever you install (Python, VS Code, Jupyter)</td>
+<td>Runs directly on your machine</td>
+</tr>
+</tbody>
+</table>
+<section id="github-copilot-and-copilot-chat-ask-edit-and-agent-modes" class="level3" data-number="4.2.1">
+<h3 data-number="4.2.1" class="anchored" data-anchor-id="github-copilot-and-copilot-chat-ask-edit-and-agent-modes"><span class="header-section-number">4.2.1</span> GitHub Copilot and Copilot Chat: Ask, Edit and Agent Modes</h3>
+<p>Let’s introduce the features of GitHub Copilot and Copilot Chat. GitHub Copilot comes with <a href="https://github.blog/ai-and-ml/github-copilot/copilot-ask-edit-and-agent-modes-what-they-do-and-when-to-use-them/">four distant modes that you may use</a>:</p>
+<ol type="1">
+<li><a href="https://code.visualstudio.com/docs/copilot/chat/inline-chat">Inline Chat or suggestions</a>: quick in-context code suggestions directly within VS Code using shortcuts <code>⌘+I</code> or <code>Ctrl+I</code>.</li>
+</ol>
+<p><img src="images/inlinemodeall.png" class="img-fluid"></p>
+<ol start="2" type="1">
+<li><p><strong><a href="https://code.visualstudio.com/docs/copilot/chat/chat-ask-mode">Ask Mode</a>: best for Q&amp;A</strong>. Highlight some code, then ask Copilot questions about its logic, purpose, or braistorm ideas implementation.</p></li>
+<li><p><strong><a href="https://code.visualstudio.com/docs/copilot/chat/copilot-edits">Edit Mode</a></strong>: give you <strong>inline, review-ready code edits</strong> across the files.</p></li>
+<li><p><a href="https://code.visualstudio.com/docs/copilot/chat/chat-agent-mode#_use-agent-mode">Agent Mode</a>: an <strong>autonomous mode</strong> where Copilot <strong>analyzes context</strong> (e.g., files in your workspace) and <strong>performs tasks</strong> based on your request.</p>
+<p><img src="images/chatmodes.png" class="img-fluid" width="500"></p></li>
+</ol>
+</section>
+<section id="tips-for-using-the-copilot-agent-mode" class="level3" data-number="4.2.2">
+<h3 data-number="4.2.2" class="anchored" data-anchor-id="tips-for-using-the-copilot-agent-mode"><span class="header-section-number">4.2.2</span> Tips for Using the Copilot Agent Mode</h3>
+<p>To get the best results in Agent Mode, you can provide additional context or use special commands to guide Copilot about what you want it to do.</p>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>What is “Context”?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Context is the information you give Copilot so it understands <strong>what you’re working on and can respond more accurately</strong>. In Agent Mode, <strong>context can include the code you’ve selected</strong>, other <code>.py</code> files, or any extra notes you write with <code>#</code>.</p>
+</div>
+</div>
+<ul>
+<li>Highlight code (e.g., line 57-59 of the <code>vscodecopilot.qmd</code> file) in the file will automatically add those lines of code in the context (see <a href="#fig-agent-mode" class="quarto-xref">Figure&nbsp;<span>4.1</span></a>)</li>
+<li>Add context with <code>#</code>. Add additional files that you want Copilot to read before completing the task.</li>
+<li>commands with <code>/</code>. E.g. <code>/explain</code> is a command asking for explanation of the code.</li>
+</ul>
+<div id="fig-agent-mode" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-agent-mode-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/agentmodetip2.png" class="img-fluid figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-agent-mode-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.1: Highlight code, or add contexts or commands
+</figcaption>
+</figure>
+</div>
+</section>
+<section id="vibe-coding-vs-ai-assisted-coding" class="level3" data-number="4.2.3">
+<h3 data-number="4.2.3" class="anchored" data-anchor-id="vibe-coding-vs-ai-assisted-coding"><span class="header-section-number">4.2.3</span> Vibe-coding vs AI-assisted Coding</h3>
+<p>Using the <strong>Agent Mode</strong> will allow you to vibe code <strong>without reading or understanding any of the code</strong>. You relied on the AI to produce something that looked right without knowing how it actually worked.</p>
+<p>However, <strong>if you read, wrote, or edited the code</strong> while building the app, you were doing <strong>AI-assisted coding</strong> — working with the AI to shape logic, fix bugs, and design structure.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 35%">
+<col style="width: 26%">
+<col style="width: 38%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th><strong>Vibe Coding</strong></th>
+<th><strong>AI-Assisted Coding</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Definition</strong></td>
+<td>A no-code workflow where you <strong>don’t read, write, or edit</strong> code. You simply test the prototype or app to see if it meets your design or intent.</td>
+<td>A coding workflow where you <strong>interact with and modify code</strong> using AI tools like Copilot’s <strong>Ask</strong>, <strong>Edit</strong>, or <strong>Inline Chat</strong>.</td>
+</tr>
+<tr class="even">
+<td><strong>Goal</strong></td>
+<td>Validate the <strong>“vibe”</strong> — check if the <strong>prototype</strong> looks, feels, and behaves as intended.</td>
+<td>Build, refine, and ship <strong>production-ready features</strong> with AI support.</td>
+</tr>
+<tr class="odd">
+<td><strong>User Interaction</strong></td>
+<td><strong>No direct code manipulation</strong> — focus is on results, not implementation.</td>
+<td><strong>Actively generate, read, edit, debug, and review code</strong> and suggestions with AI</td>
+</tr>
+<tr class="even">
+<td><strong>AI Tools</strong></td>
+<td>GitHub Copilot <strong>Agent Mode</strong></td>
+<td>GitHub Copilot <strong>Ask Mode, Edit Mode, Inline Chat</strong></td>
+</tr>
+<tr class="odd">
+<td><strong>Mindset</strong></td>
+<td><em>“I don’t care how it’s built — does it look and work as intended?”</em></td>
+<td><em>“I’ll collaborate with AI to understand, fix, or enhance the code.”</em></td>
+</tr>
+<tr class="even">
+<td><strong>Best For</strong></td>
+<td>Rapid prototyping, early design validation</td>
+<td>Full-cycle software or data product development: feature implementation, optimization, and maintenance.</td>
+</tr>
+<tr class="odd">
+<td><strong>Limitations</strong>.</td>
+<td>Ignores the complexity, lacks of consideration over performance, scalability, and maintainability.</td>
+<td>Supports real data engineering work but still requires developer understanding and validation</td>
+</tr>
+</tbody>
+</table>
+<p>Both <strong>Vibe-coding</strong> and <strong>AI-assisted coding</strong> have their place in development. Use vibe-coding for quick validation and prototyping, and AI-assisted coding for building robust, production-ready data science solutions.</p>
+<p>Although vibe-coding feels exciting, <strong>you can’t rely on it from prototype to production, as it often makes mistakes or produces “shit code”</strong> — duplicated logic, buggy and insecure implementations, and tangled features no one dares to maintain. In data science, that might look like a notebook full of hard-coded file paths, random seeds, and global variables — impossible to reproduce or scale.</p>
+<p><img src="images/mistakes.png" class="img-fluid" width="200"></p>
+<p><strong>Also, don’t fool yourself into thinking you’re learning to code while working in Agent Mode — you’re NOT building the skills yourself.</strong> You can’t learn guitar just by watching someone else play, and you can’t learn piano by watching performances. <strong>Likewise, you can’t truly learn programming just by watching an Agent write code for you</strong>. The craft lies in understanding, experimenting, and making mistakes. That’s how you <strong>move from vibe-coding prototypes to engineered, production-ready solutions</strong>.</p>
+<p>While <strong>vibe coding</strong> can accelerate prototyping and help non-technical users <strong>validate design ideas</strong>, it often <strong>overlooks many critical aspects</strong> of data engineering — such as scalability, performance, maintainability, and security. Building reliable data science solution or product remains a complex, multi-layered process that requires thoughtful coding, testing, and collaboration between designers, developers, and AI tools.</p>
+</section>
+</section>
+<section id="lab-make-it-a-.py-file-with-functions" class="level2" data-number="4.3">
+<h2 data-number="4.3" class="anchored" data-anchor-id="lab-make-it-a-.py-file-with-functions"><span class="header-section-number">4.3</span> Lab: Make it a <code>.py</code> file with functions</h2>
+<p><strong>Let’s do some vibe coding!</strong></p>
+<ul class="task-list">
+<li><label><input type="checkbox">1. Open and take a look at the <code>Compute Financial Ratios Notebook.ipynb</code></label></li>
+<li><label><input type="checkbox">2. Add a z-score metric seen in <a href="#fig-z-score" class="quarto-xref">Figure&nbsp;<span>4.2</span></a>.</label></li>
+</ul>
+<div id="fig-z-score" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-z-score-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/z-score.png" class="img-fluid figure-img" width="550">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-z-score-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;4.2: Z-score reference
+</figcaption>
+</figure>
+</div>
+<ul class="task-list">
+<li><label><input type="checkbox">3. Make a empty <code>finratios.py</code> script file inside the same folder using bash command.</label></li>
+<li><label><input type="checkbox">4. Re-write the notebook code into reusable functions inside <code>finratios.py</code></label>
+<ul>
+<li><code>fetch_data_local</code></li>
+<li><code>fetch_data_local_single_ticker</code></li>
+<li><code>calculate_metrics</code></li>
+<li><code>plot_trend</code></li>
+</ul></li>
+</ul>
+<p><strong>Good practices</strong>:</p>
+<p>You can copy and paste the good practice to Copilot when completing the tasks above.</p>
+<ul class="task-list">
+<li><label><input type="checkbox">Each function should do one clear thing (e.g., load data, compute metrics, or plot)</label></li>
+<li><label><input type="checkbox">When writing functions, <strong>only use variables that come from the input parameters</strong>. If you need to use something inside the function, then make them input parameters.</label></li>
+<li><label><input type="checkbox">Add a <code>if __name__ == "__main__":</code> for testing at the bottom of <code>finratios.py</code>, such as:</label></li>
+</ul>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> <span class="va">__name__</span> <span class="op">==</span> <span class="st">"__main__"</span>:</span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Simple test cases</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="bu">print</span>(compute_pe_ratio(<span class="dv">1000000</span>, <span class="dv">50000</span>, <span class="dv">30</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="learn-a-bit-about-streamlit" class="level2" data-number="4.4">
+<h2 data-number="4.4" class="anchored" data-anchor-id="learn-a-bit-about-streamlit"><span class="header-section-number">4.4</span> Learn a bit about Streamlit</h2>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Tip
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You don’t know what Streamlit can do. Streamlit doesn’t know what you want.<br>
+But, we’ve gotta start <em>somewhere</em>.<br>
+So let’s learn a bit. Once you know <strong>what it <em>can</em> do</strong>,<br>
+you’ll finally know <strong>what you <em>can make it do</em></strong> (with AI’s help).</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-tip callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>How learn to use a new Python package?
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<ul>
+<li>What is Streamlit, and where is its API reference and official documentation?</li>
+<li>What can Streamlit do — what kinds of apps or problems is it best at solving?</li>
+<li>What small examples or experiments can I build to quickly discover and learn its core features?</li>
+</ul>
+</div>
+</div>
+<ul>
+<li><strong>Start with the official docs and examples</strong> — skim the Streamlit docs homepage and gallery to get a mental map of what’s possible before diving into code.</li>
+<li><strong>Learn by doing small experiments</strong> — build micro-apps (e.g., one with a button, one with a chart) to turn reading into muscle memory.
+<ul>
+<li>E.g., create <code>app1.py</code>, <code>app2.py</code> files each to test and run some micro streamlit apps.</li>
+</ul></li>
+<li><strong>Read code, not just tutorials</strong> — explore community demos or open-source Streamlit apps to see how others structure layouts, manage state, and handle inputs.</li>
+<li><strong>Iterate with feedback loops</strong> — run streamlit run <code>app.py</code> often and tweak one thing at a time; immediate visual feedback accelerates understanding.</li>
+<li><strong>Reflect and generalize</strong> — after each mini-project, note what patterns repeat (e.g., sidebar widgets, caching, layout control) to build knowledge for future tools.</li>
+</ul>
+</section>
+<section id="prototype-a-streamlit-app" class="level2" data-number="4.5">
+<h2 data-number="4.5" class="anchored" data-anchor-id="prototype-a-streamlit-app"><span class="header-section-number">4.5</span> Prototype a Streamlit app</h2>
+<p>Here is an example.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/dashboard.png" class="img-fluid figure-img" width="650"></p>
+<figcaption>An Streamlit Example</figcaption>
+</figure>
+</div>
+<ul class="task-list">
+<li><label><input type="checkbox">Try to build a dashboard displaying the financial metrics interactively.</label></li>
+</ul>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./chapter2.html" class="pagination-link" aria-label="Labs: Minimal Technical Skills Required">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Labs: Minimal Technical Skills Required</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+  </div>
+</nav>
+</div> <!-- /content -->
+
+
+
+
+</body></html>

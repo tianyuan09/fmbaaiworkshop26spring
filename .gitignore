@@ -4,3 +4,7 @@ _site/
 __pycache__/
 .DS_Store
 .vscode/
+
+/.quarto/
+**/*.quarto_ipynb
+*.qmd

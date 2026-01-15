@@ -1,11 +1,20 @@
-# Welcome to the FM BA AI Workshop
+# Welcome {.unnumbered}
 
-This is a Quarto book for the FM Business Analytics AI Workshop 2026.
+![](images/allsessions.png)
 
-## About This Workshop
 
-This workshop covers business analytics with AI tools and modern development practices.
+## Upcoming Sessions {.unnumbered}
 
-::: {.callout-note}
-Start by editing the chapters to add your content!
-:::
+The first 3 sessions on **AI Tools Users** have been completed in December 2025. 
+
+Below are the upcoming sessions:
+
+- **Session 4: Vibe Coding** — January 16
+- **Session 5: Prototyping with AI** — January 23
+- **Session 6: Building AI Powered Applications** — January 30
+
+::: {.callout-important}
+**You must have a [GitHub account](https://github.com/) to participate in the upcoming sessions effectively.**
+::: 
+
+Please do not cite or distribute without author’s permission.
