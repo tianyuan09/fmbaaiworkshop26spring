@@ -1,0 +1,23 @@
+project:
+  type: book
+  output-dir: docs
+
+execute:
+  freeze: auto
+
+bibliography: references.bib
+
+book:
+  title: "FM Business Analytics AI Workshop"
+  author: "Your Name"
+  date: today
+  chapters:
+    - index.qmd
+    - chapter1.qmd
+
+format:
+  html:
+    theme: cosmo
+    toc: true
+    number-sections: true
+    code-fold: true

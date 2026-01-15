@@ -1,0 +1,11 @@
+# Welcome to the FM BA AI Workshop
+
+This is a Quarto book for the FM Business Analytics AI Workshop 2026.
+
+## About This Workshop
+
+This workshop covers business analytics with AI tools and modern development practices.
+
+::: {.callout-note}
+Start by editing the chapters to add your content!
+:::
