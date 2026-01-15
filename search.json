@@ -1,0 +1,32 @@
+[
+  {
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "FM Business Analytics AI Workshop",
+    "section": "",
+    "text": "1 Welcome to the FM BA AI Workshop\nThis is a Quarto book for the FM Business Analytics AI Workshop 2026.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome to the FM BA AI Workshop</span>"
+    ]
+  },
+  {
+    "objectID": "index.html#about-this-workshop",
+    "href": "index.html#about-this-workshop",
+    "title": "FM Business Analytics AI Workshop",
+    "section": "1.1 About This Workshop",
+    "text": "1.1 About This Workshop\nThis workshop covers business analytics with AI tools and modern development practices.\n\n\n\n\n\n\nNote\n\n\n\nStart by editing the chapters to add your content!",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Welcome to the FM BA AI Workshop</span>"
+    ]
+  },
+  {
+    "objectID": "chapter1.html",
+    "href": "chapter1.html",
+    "title": "2  Chapter 1",
+    "section": "",
+    "text": "2.1 Section 1.1\nAdd your first chapter content here.\nWrite your content in markdown format.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Chapter 1</span>"
+    ]
+  }
+]
