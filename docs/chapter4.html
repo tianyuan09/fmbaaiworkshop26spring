@@ -6,10 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Yuan Tian">
-<meta name="dcterms.date" content="2026-01-22">
 
-<title>FMBA AI Workshop Jan 2026</title>
+<title>5&nbsp; Build Applications with LLMs and AI Feature – FMBA AI Workshop Jan 2026</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -32,7 +65,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./chapter0.html" rel="next">
+<link href="./chapter3.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -40,10 +73,10 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="site_libs/quarto-html/anchor.min.js"></script>
 <link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-065a5179aebd64318d7ea99d77b64a9e.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-99913b7803b80b0c1d2b970a25816663.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-389dc5fa432510b2a365d7aa80defd6f.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -84,7 +117,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./index.html">Welcome</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./chapter4.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Build Applications with LLMs and AI Feature</span></a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="Search" onclick="window.quartoOpenSearch();">
@@ -113,7 +146,7 @@ ul.task-list li input[type="checkbox"] {
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./index.html" class="sidebar-item-text sidebar-link active">
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Welcome</span></a>
   </div>
 </li>
@@ -141,6 +174,12 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prototyping an app with <code>streamlit</code></span></span></a>
   </div>
 </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./chapter4.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Build Applications with LLMs and AI Feature</span></span></a>
+  </div>
+</li>
     </ul>
     </div>
 </nav>
@@ -151,9 +190,15 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#welcome" id="toc-welcome" class="nav-link active" data-scroll-target="#welcome">Welcome</a>
+  <li><a href="#review-the-difference-of-api-vs.-chat-in-ai-tools" id="toc-review-the-difference-of-api-vs.-chat-in-ai-tools" class="nav-link active" data-scroll-target="#review-the-difference-of-api-vs.-chat-in-ai-tools"><span class="header-section-number">5.1</span> Review the Difference of API vs.&nbsp;Chat in AI Tools</a></li>
+  <li><a href="#lab-enhance-your-app-with-llm-powered-interpretation" id="toc-lab-enhance-your-app-with-llm-powered-interpretation" class="nav-link" data-scroll-target="#lab-enhance-your-app-with-llm-powered-interpretation"><span class="header-section-number">5.2</span> Lab: Enhance Your App with LLM-Powered Interpretation</a>
   <ul class="collapse">
-  <li><a href="#upcoming-sessions" id="toc-upcoming-sessions" class="nav-link" data-scroll-target="#upcoming-sessions">Upcoming Sessions</a></li>
+  <li><a href="#get-started-with-gemini-api" id="toc-get-started-with-gemini-api" class="nav-link" data-scroll-target="#get-started-with-gemini-api"><span class="header-section-number">5.2.1</span> Get Started with Gemini API</a></li>
+  <li><a href="#create-your-google-gemini-api-key" id="toc-create-your-google-gemini-api-key" class="nav-link" data-scroll-target="#create-your-google-gemini-api-key"><span class="header-section-number">5.2.2</span> Create your Google Gemini API Key</a></li>
+  <li><a href="#lab-run-a-simple-gemini-use-case" id="toc-lab-run-a-simple-gemini-use-case" class="nav-link" data-scroll-target="#lab-run-a-simple-gemini-use-case"><span class="header-section-number">5.2.3</span> Lab: Run A Simple Gemini Use Case</a></li>
+  <li><a href="#prompt-engineering" id="toc-prompt-engineering" class="nav-link" data-scroll-target="#prompt-engineering"><span class="header-section-number">5.2.4</span> Prompt engineering</a></li>
+  <li><a href="#bad-vs-good-prompts" id="toc-bad-vs-good-prompts" class="nav-link" data-scroll-target="#bad-vs-good-prompts"><span class="header-section-number">5.2.5</span> Bad vs Good Prompts</a></li>
+  <li><a href="#lab-design-a-value-adding-ai-prompt-for-your-dashboard" id="toc-lab-design-a-value-adding-ai-prompt-for-your-dashboard" class="nav-link" data-scroll-target="#lab-design-a-value-adding-ai-prompt-for-your-dashboard"><span class="header-section-number">5.2.6</span> Lab: Design a Value-Adding AI Prompt for Your Dashboard</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -163,26 +208,14 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">FMBA AI Workshop Jan 2026</h1>
+<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Build Applications with LLMs and AI Feature</span></h1>
 </div>
 
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Yuan Tian </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">January 22, 2026</p>
-    </div>
-  </div>
   
     
   </div>
@@ -192,32 +225,219 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="welcome" class="level1 unnumbered">
-<h1 class="unnumbered">Welcome</h1>
-<p><img src="images/allsessions.png" class="img-fluid"></p>
-<section id="upcoming-sessions" class="level2 unnumbered">
-<h2 class="unnumbered anchored" data-anchor-id="upcoming-sessions">Upcoming Sessions</h2>
-<p>The first 3 sessions on <strong>AI Tools Users</strong> have been completed in December 2025.</p>
-<p>Below are the upcoming sessions:</p>
-<ul>
-<li><strong>Session 4: Vibe Coding</strong> — January 16</li>
-<li><strong>Session 5: Prototyping with AI</strong> — January 23</li>
-<li><strong>Session 6: Building AI Powered Applications</strong> — January 30</li>
-</ul>
-<div class="callout callout-style-default callout-important callout-titled">
+<section id="review-the-difference-of-api-vs.-chat-in-ai-tools" class="level2" data-number="5.1">
+<h2 data-number="5.1" class="anchored" data-anchor-id="review-the-difference-of-api-vs.-chat-in-ai-tools"><span class="header-section-number">5.1</span> Review the Difference of API vs.&nbsp;Chat in AI Tools</h2>
+<p>Many of you have already used <strong>AI chat tools</strong> like <strong>ChatGPT</strong> or <strong>Gemini Chat</strong> to ask questions, write code snippets, or brainstorm ideas. That’s the <em>user</em> experience — you’re communicating with the model to get answers.</p>
+<p>But when you start using <strong>LLMs and AI agents for development</strong>, the perspective changes completely. Instead of <em>talking to</em> the AI, you’re now <em>building with</em> it. You’re no longer just a user — you become a <strong>developer who leverages the model’s power through APIs</strong> to create tools, automate workflows, or build intelligent apps for others to use.</p>
+<p>The table below compares OpenAI’s ChatGPT and Google’s Gemini platforms, highlighting the difference between their APIs (used by developers to build applications) and their chat interfaces (used by end users to interact with the models).</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 6%">
+<col style="width: 26%">
+<col style="width: 23%">
+<col style="width: 23%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspect</th>
+<th><strong>OpenAI API</strong></th>
+<th><strong>ChatGPT (OpenAI)</strong></th>
+<th><strong>Gemini API</strong></th>
+<th><strong>Gemini Chat</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Type</strong></td>
+<td>Developer API</td>
+<td>Chat Interface</td>
+<td>Developer API</td>
+<td>Chat Interface</td>
+</tr>
+<tr class="even">
+<td><strong>Purpose</strong></td>
+<td>Build apps or tools using GPT models (e.g., GPT-4).</td>
+<td>Chat directly with GPT models for writing, coding, or learning.</td>
+<td>Build apps or workflows using Gemini models.</td>
+<td>Chat naturally with Gemini for assistance or ideas.</td>
+</tr>
+<tr class="odd">
+<td><strong>How It’s Used</strong></td>
+<td>Through code (Python, JS, etc.).</td>
+<td>Through a chat interface (web or app).</td>
+<td>Through code (Google AI Studio or Vertex AI).</td>
+<td>Through chat (Gemini web app, Workspace integration).</td>
+</tr>
+<tr class="even">
+<td><strong>Users</strong></td>
+<td>Developers, researchers.</td>
+<td>General users, educators, professionals.</td>
+<td>Developers, data teams.</td>
+<td>Students, creators, general users.</td>
+</tr>
+<tr class="odd">
+<td><strong>Example Use</strong></td>
+<td>A developer calls GPT-4 via API to generate summaries or analyze data.</td>
+<td>You ask “Explain this regression code.”</td>
+<td>A data app uses Gemini API to summarize Google Sheets data.</td>
+<td>You ask Gemini, “Visualize this dataset for me.”</td>
+</tr>
+<tr class="even">
+<td><strong>Output Control</strong></td>
+<td>Fully customizable — responses formatted via code.</td>
+<td>Natural text output in chat.</td>
+<td>Fully customizable — can return text, JSON, or structured data.</td>
+<td>Conversational responses, plain text or visuals.</td>
+</tr>
+<tr class="odd">
+<td><strong>Goal</strong></td>
+<td><strong>Build with the model.</strong></td>
+<td><strong>Talk to the model.</strong></td>
+<td><strong>Build with the model.</strong></td>
+<td><strong>Talk to the model.</strong></td>
+</tr>
+</tbody>
+</table>
+<div class="callout callout-style-default callout-warning callout-titled">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
 <i class="callout-icon"></i>
 </div>
 <div class="callout-title-container flex-fill">
-Important
+<span class="screen-reader-only">Warning</span><strong>Summary</strong>
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p><strong>You must have a <a href="https://github.com/">GitHub account</a> to participate in the upcoming sessions effectively.</strong></p>
+<ul>
+<li><strong>APIs are for developers</strong> — you use them to build apps with AI features for the end users.</li>
+<li><strong>Chat tools are for the end users</strong> — you chat with the model to get answers.</li>
+<li>OpenAI powers ChatGPT; Google powers Gemini; different ecosystems.</li>
+</ul>
 </div>
 </div>
-<p>Please do not cite or distribute without author’s permission.</p>
+</section>
+<section id="lab-enhance-your-app-with-llm-powered-interpretation" class="level2" data-number="5.2">
+<h2 data-number="5.2" class="anchored" data-anchor-id="lab-enhance-your-app-with-llm-powered-interpretation"><span class="header-section-number">5.2</span> Lab: Enhance Your App with LLM-Powered Interpretation</h2>
+<p>In this lab, you will continue building your financial dashboard by integrating AI features with Google Gemini API.</p>
+<section id="get-started-with-gemini-api" class="level3" data-number="5.2.1">
+<h3 data-number="5.2.1" class="anchored" data-anchor-id="get-started-with-gemini-api"><span class="header-section-number">5.2.1</span> Get Started with Gemini API</h3>
+<p>Please sign in to Google AI Studio using your Google account <a href="https://ai.google.dev/aistudio" class="uri">https://ai.google.dev/aistudio</a>.</p>
+</section>
+<section id="create-your-google-gemini-api-key" class="level3" data-number="5.2.2">
+<h3 data-number="5.2.2" class="anchored" data-anchor-id="create-your-google-gemini-api-key"><span class="header-section-number">5.2.2</span> Create your Google Gemini API Key</h3>
+<p>Google has a free tier for the Gemini API that provides limited usage for development and experimentation.</p>
+<p>You can obtain a free API key using your Google account:</p>
+<ul>
+<li><a href="https://aistudio.google.com/api-keys" class="uri">https://aistudio.google.com/api-keys</a></li>
+</ul>
+<p><img src="images/geminikey.png" class="img-fluid"></p>
+<p>Please <strong>delete your key if not in use</strong>. Keep it secure, and <strong>never share or publish your key</strong>.</p>
+</section>
+<section id="lab-run-a-simple-gemini-use-case" class="level3" data-number="5.2.3">
+<h3 data-number="5.2.3" class="anchored" data-anchor-id="lab-run-a-simple-gemini-use-case"><span class="header-section-number">5.2.3</span> Lab: Run A Simple Gemini Use Case</h3>
+<p>Check out the page &lt;<a href="https://aistudio.google.com/app/" class="uri">https://aistudio.google.com/app/</a>&gt; for a simple use case of how to use Gemini API with Python (see the code example below)</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># get started with Gemini using Python</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># You can find the code from Google AI Studio</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="im">from</span> google <span class="im">import</span> genai</span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="co"># modify this line of code with your own api</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>client <span class="op">=</span> genai.Client()</span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>response <span class="op">=</span> client.models.generate_content(</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    model<span class="op">=</span><span class="st">"gemini-3-flash-preview"</span>,</span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    contents<span class="op">=</span><span class="st">"Explain how AI works in a few words"</span>,</span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>)</span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="bu">print</span>(response.text)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Create a Colab notebook (e.g., <code>gemini.ipynb</code>) and copy the sample code above. Then modidy the following line with your <code>api_key</code> to run the sample code.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co"># modify this line of code in the previous code section.</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>client <span class="op">=</span> genai.Client(api_key<span class="op">=</span><span class="st">"your_actual_api_key_here"</span>)</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<ul class="task-list">
+<li><label><input type="checkbox">I successfully tested the Gemini Use Case.</label></li>
+</ul>
+</section>
+<section id="prompt-engineering" class="level3" data-number="5.2.4">
+<h3 data-number="5.2.4" class="anchored" data-anchor-id="prompt-engineering"><span class="header-section-number">5.2.4</span> Prompt engineering</h3>
+<p>A <strong>prompt</strong> is the input text or query given to a generative AI model to instruct it on what to do.</p>
+<blockquote class="blockquote">
+<p>e.g., <em>“Write a Python function to calculate the average of a list.”</em></p>
+</blockquote>
+<p>In simple terms, <strong>prompt engineering</strong> is about communicating effectively with AI. It’s the skill of writing prompts so the large language models (LLMs) understands your <strong>intent, context, and background</strong>, and can respond accurately and usefully.</p>
+<p>In other words:</p>
+<blockquote class="blockquote">
+<p>Prompt engineering = communication skills with LLMs.</p>
+</blockquote>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+Note
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>You can explore prompt ideas for the Gemini API in Google AI studio. <a href="https://ai.google.dev/gemini-api/prompts" class="uri">https://ai.google.dev/gemini-api/prompts</a></p>
+</div>
+</div>
+</section>
+<section id="bad-vs-good-prompts" class="level3" data-number="5.2.5">
+<h3 data-number="5.2.5" class="anchored" data-anchor-id="bad-vs-good-prompts"><span class="header-section-number">5.2.5</span> Bad vs Good Prompts</h3>
+<p>Here is a number of examples showing how vague prompts differs from well-engineered ones. AI can understand and act only as well as you communicate.</p>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 22%">
+<col style="width: 37%">
+<col style="width: 20%">
+<col style="width: 20%">
+</colgroup>
+<thead>
+<tr class="header">
+<th><strong>Task</strong></th>
+<th><strong>Bad Prompt</strong></th>
+<th><strong>Good Prompt</strong></th>
+<th><strong>Why It’s Better</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Ask for code</strong></td>
+<td>“Write some Python code for data.”</td>
+<td>“Write a Python function using <code>pandas</code> to read a CSV file, clean missing values, and calculate the average of each column.”</td>
+<td>Gives <strong>clear context</strong>, <strong>specific goal</strong>, and <strong>tools</strong> to use.</td>
+</tr>
+<tr class="even">
+<td><strong>Explain concept</strong></td>
+<td>“Explain machine learning.”</td>
+<td>“Explain what machine learning is <strong>for a high school student</strong> using <strong>everyday examples</strong>.”</td>
+<td>Specifies <strong>audience</strong> and <strong>tone</strong>, making the response more focused.</td>
+</tr>
+<tr class="odd">
+<td><strong>Generate text</strong></td>
+<td>“Write about climate change.”</td>
+<td>“Write a 3-paragraph summary of climate change causes and impacts, suitable for a classroom presentation.”</td>
+<td>Defines <strong>length</strong>, <strong>scope</strong>, and <strong>audience</strong>.</td>
+</tr>
+<tr class="even">
+<td><strong>Data science task</strong></td>
+<td>“Analyze this dataset.”</td>
+<td>“Analyze this dataset to find the top 5 products by sales, and visualize the trend over time using matplotlib.”</td>
+<td>Specifies the <strong>goal</strong>, <strong>method</strong>, and <strong>output format</strong>.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="lab-design-a-value-adding-ai-prompt-for-your-dashboard" class="level3" data-number="5.2.6">
+<h3 data-number="5.2.6" class="anchored" data-anchor-id="lab-design-a-value-adding-ai-prompt-for-your-dashboard"><span class="header-section-number">5.2.6</span> Lab: Design a Value-Adding AI Prompt for Your Dashboard</h3>
+<p>Your financial metrics dashboard already allows users to select tickers and view several metrics. Now, your goal is to design a prompt that integrates a LLM from Gemini to provide AI-generated insights that add value for the users of the dashboard.</p>
+<ul class="task-list">
+<li><p><label><input type="checkbox">Design your prompt with clear intent and context.<br>
+</label></p></li>
+<li><p><label><input type="checkbox">The prompt should generate something useful for the dashboard user.</label></p></li>
+<li><p><label><input type="checkbox">Integrate your prompt into your streamlit app. You can build on the simple use case you successfully tested earlier and try integrating it into your streamlit app using Copilot.</label></p></li>
+<li><p><label><input type="checkbox">Test your prompt in the dashboard to ensure it gives clear, relevant, and user-friendly outputs.</label></p></li>
+</ul>
 
 
 </section>
@@ -626,11 +846,11 @@ Important
   </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
+      <a href="./chapter3.html" class="pagination-link" aria-label="Prototyping an app with `streamlit`">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Prototyping an app with <code>streamlit</code></span></span>
+      </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./chapter0.html" class="pagination-link" aria-label="AI Tools for Coding">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">AI Tools for Coding</span></span> <i class="bi bi-arrow-right-short"></i>
-      </a>
   </div>
 </nav>
 </div> <!-- /content -->
